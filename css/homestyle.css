@@ -38,7 +38,6 @@ body {
 header {
   z-index: 2;
   margin-bottom: 3rem;
-  display: none;
 }
 
 .slider-container {
