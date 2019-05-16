@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <title>Culturals, IIT Bhilai</title>
+  </head>
+  <body>
+    <header class="page container">
+      <div class="vid">
+        <video autoplay="autoplay" muted loop="loop" id="introVid" poster="res/intro-alt-poster.png">
+          <source src="./res/intro.mp4" type="video/mp4"></source>
+        </video>
+      </div>
+      <div class="color-overlay"></div>
+      <div class="overlay">
+        <h1><a href="./comingsoon.html" class="effect-shine grow">Culturals</a></h1>
+        <h3>magnum opus . a cult</h3>
+      </div>
+      <div class="insti">
+        <a href="https://iitbhilai.ac.in/" target="_blank" class="iitbh">IIT BHILAI</a>
+      </div>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+      $(window).on("load", function() {
+        $('.grow').toggleClass('active')
+        if ($('.grow').hasClass('active'))
+        window.setTimeout(function() {
+      $('.grow').toggleClass('active');
+  }, 1000);
+      })
+    </script>
+
+  </body>
+</html>
+
+<!--https://drive.google.com/file/d/1sR2opP-1byBP1OIJ-RN-D3anByzQ871g/view?usp=sharing-->
+<!--https://drive.google.com/uc?export=download&id=1sR2opP-1byBP1OIJ-RN-D3anByzQ871g-->
