@@ -8,9 +8,9 @@ $(function(){
   	if ($('.box').hasClass('js--fadeInLeft')) {
   		$('.box').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
   	}
-    if ($('.box').hasClass('box-left')) {
-  		$('.box').removeClass('box-left').addClass('box-right');
-  	}
+    // if ($('.box').hasClass('box-left')) {
+  	// 	$('.box').removeClass('box-left').addClass('box-right');
+  	// }
 
 
   	sr.reveal('.js--fadeInRight', {
