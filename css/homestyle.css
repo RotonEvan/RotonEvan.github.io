@@ -1,4 +1,5 @@
 @import "navbarstyle.css";
+@import "clubcard.css";
 
 a {
   text-decoration: none !important;
@@ -12,13 +13,16 @@ html {
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  background-image: url("../res/home-bg-2.jpg");
+  background-image: url("../res/home-bg-4.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* display: flex; */
+
 }
 
 .color-overlay {
@@ -28,11 +32,12 @@ body {
   background-position: center center;
   background-size: cover;
   position: fixed;
-  z-index: 0 !important;
+  z-index: -100 !important;
   height: 100vh;
   width: 100%;
   top: 0;
   left: 0;
+  display: none;
 }
 
 header {
@@ -64,6 +69,37 @@ header {
   color: #f4eb66;
 }
 
+.meet-clubs {
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 5 !important;
+}
+
+.meet-clubs .clubs-header {
+  font-family: 'Righteous', cursive;
+  font-size: 7rem;
+}
+
+.meet-clubs .clubs-desc {
+  font-family: 'Stylish', sans-serif;
+  font-size: 4rem;
+  color: #f4eb66;
+}
+
+/* @media screen and (max-width: 960px) {
+  .container {
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    display: block;
+  }
+} */
+
 .desc-cult {
   font-family: 'Stylish', sans-serif;
   font-size: 3rem;
@@ -71,7 +107,7 @@ header {
   text-align: center;
   position: relative;
   max-width: 75ch;
-  margin:5rem auto;
+  margin:7rem auto;
   transform: translateX(-50%);
 }
 
