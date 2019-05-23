@@ -71,3 +71,9 @@
 
   /* width: 360px; */
 }
+
+@media (max-width: 920px) {
+  .council-img {
+    margin: auto 0;
+  }
+}

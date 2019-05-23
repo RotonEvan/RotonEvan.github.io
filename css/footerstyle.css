@@ -166,6 +166,7 @@ font-family: fontawesome !important;
 		width: 100%;
 		margin-bottom: 40px;
 		text-align: center;
+		overflow: hidden;
 	}
 
 	.footer-distributed .footer-center i{
