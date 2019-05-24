@@ -19,9 +19,18 @@ body {
     background-size: cover;
     /*overflow: hidden;*/
 }
+<<<<<<< HEAD
 .container{
     margin-left: 60%;
 }
+=======
+
+header {
+  z-index: 2 !important;
+  margin-bottom: 3rem;
+}
+
+>>>>>>> f2b740b98d62211dc968e2e9821d8f24f2f8fe9f
 .heading {
     color: white;
 }
