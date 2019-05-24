@@ -19,6 +19,12 @@ body {
     background-size: cover;
     /*overflow: hidden;*/
 }
+
+header {
+  z-index: 2 !important;
+  margin-bottom: 3rem;
+}
+
 .heading {
     color: white;
 }
