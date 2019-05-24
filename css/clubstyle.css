@@ -19,6 +19,9 @@ body {
     background-size: cover;
     /*overflow: hidden;*/
 }
+.container{
+    margin-left: 60%;
+}
 .heading {
     color: white;
 }
