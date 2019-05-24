@@ -1,4 +1,5 @@
 @import "navbarstyle.css";
+@import "footerstyle.css";
 
 a {
     text-decoration: none !important;
@@ -19,18 +20,19 @@ body {
     background-size: cover;
     /*overflow: hidden;*/
 }
-<<<<<<< HEAD
-.container{
-    margin-left: 60%;
+
+.club_content{
+    padding-left: 160px;
 }
-=======
+.container_main{
+    padding:5%;
+}
 
 header {
   z-index: 2 !important;
   margin-bottom: 3rem;
 }
 
->>>>>>> f2b740b98d62211dc968e2e9821d8f24f2f8fe9f
 .heading {
     color: white;
 }
@@ -53,7 +55,7 @@ header {
 .main_club_heading {
     text-align: center;
     padding-bottom: 15%;
-    padding-top: 10%;
+    padding-top: 20%;
     padding-left: 18%;
     padding-right: 12%;
 
@@ -118,21 +120,38 @@ header {
 .fa-music:hover  {
     color: magenta ;
 }
+.fa-music:active  {
+    color: magenta ;
+}
 /*Club selection ends*/
 
 
 /*Social media*/
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 
-/*End Socila*/
+/* Style the icon bar links */
+
+/*End Social*/
 
 
 /*Youtube Videos*/
 
 
 
-.youtube-carousel{
-    margin: 5%;
+body{
+    background-color: rgba(6, 2, 2, 0.22);
+    color: #fff;
 }
+
+/*.youtube-carousel{*/
+/*    border: 4px solid #e25454;*/
+/*}*/
 
 .video-container {
     position: relative; /* keeps the aspect ratio */
@@ -181,7 +200,7 @@ header {
     display: none;
 }
 
-.carousel-control {
+.carousel-control:hover {
     text-decoration: none;
     filter: alpha(opacity=60);
     outline: 0;
@@ -198,7 +217,7 @@ header {
     transform: translate(0,-50%);
     -moz-border-radius: 0 90px 90px 0;
     -webkit-border-radius: 0 90px 90px 0;
-    background-color: rgba(226, 84, 84, 0);
+    background-color: rgba(0, 0, 0, 0.48);
     display: inline-block;
     position: relative;
     float:left;
@@ -216,7 +235,7 @@ header {
     transform: translate(0,-50%);
     -moz-border-radius: 90px 0 0 90px;
     -webkit-border-radius: 90px 0 0 90px;
-    background-color: rgba(226, 84, 84, 0);
+    background-color: rgba(0, 0, 0, 0.48);
     display: inline-block;
     position: relative;
     float:right;
@@ -227,7 +246,7 @@ header {
 
 .carousel-caption {
     display: none;
-    background: none repeat scroll 0 0 rgba(226, 84, 84, 0);
+    /*background: none repeat scroll 0 0 #ffffff;*/
     bottom: 0;
     font-size: 12px;
     text-align: center;
@@ -285,53 +304,118 @@ header {
     }
 }
 
+
+
+
+/*END Videos*/
+
 /*Side panel*/
 
 /* The sidebar menu */
-.sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 12%; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+/*.sidenav {*/
+/*    height: 78%; !* Full-height: remove this if you want "auto" height *!*/
+/*    width: 160px; !* Set the width of the sidebar *!*/
+/*    position: fixed; !* Fixed Sidebar (stay in place on scroll) *!*/
+/*    z-index: 1; !* Stay on top *!*/
+/*    top: 12%; !* Stay at the top *!*/
+/*    bottom: 12%;*/
+/*    left: 0;*/
+/*    background-color: #111; !* Black *!*/
+/*    overflow-x: hidden; !* Disable horizontal scroll *!*/
+/*    !*padding-top: 20px;*!*/
+/*}*/
+
+/*!* The navigation menu links *!*/
+/*.sidenav a {*/
+/*    padding: 6px 8px 6px 16px;*/
+/*    text-decoration: none;*/
+/*    font-size: 25px;*/
+/*    color: #818181;*/
+/*    display: block;*/
+/*}*/
+
+/*!* When you mouse over the navigation links, change their color *!*/
+/*.sidenav a:hover {*/
+/*    color: #f1f1f1;*/
+/*}*/
+
+/*!* Style page content *!*/
+/*.main {*/
+/*    margin-left: 160px; !* Same as the width of the sidebar *!*/
+/*    padding: 0px 10px;*/
+/*}*/
+
+/*!* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) *!*/
+/*@media screen and (max-height: 450px) {*/
+/*    .sidenav {padding-top: 15px;}*/
+/*    .sidenav a {font-size: 18px;}*/
+/*}*/
+{
+    margin: 0;
+    font-family: "Lato", sans-serif;
 }
 
-/* The navigation menu links */
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    background-color: rgba(28, 28, 28, 0.77);
+    position: fixed;
+    top:100px;
+    height: 80%;
+    overflow: auto;
+}
+
+.sidebar a {
     display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
+.sidebar a.active {
+    /*background-color: #4CAF50;*/
+    color: white;
 }
 
-/* Style page content */
-.main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
 }
 
 
-/*Youtube videos end*/
 .header {
     z-index: 2;
 }
 
 .slider-container {
     z-index: 2;
+}
+
+div.disabled {
+    overflow-x: hidden; //horizontal
+overflow-y: scroll; //vertical
 }
