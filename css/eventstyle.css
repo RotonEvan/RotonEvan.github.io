@@ -287,6 +287,25 @@ a {
     overflow-x: hidden;
     overflow-y: hidden;
   }
+  .upcoming-event {
+    margin-top: 30px;
+  }
+
+  .upcoming-event .event-header {
+    font-size: 4.8rem;
+  }
+
+  .upcoming-event .event-desc {
+    font-size: 2.7rem;
+    color: #f4eb66;
+  }
+
+  .upcoming-event img {
+    margin: 4rem auto;
+  }
+  .past-events .event-header{
+    font-size: 4.8rem;
+  }
 }
 /* @media(max-width:920px)
 {
