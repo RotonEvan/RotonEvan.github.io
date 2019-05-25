@@ -24,9 +24,16 @@ body {
 .club_content{
     padding-left: 160px;
 }
+
 .container_main{
     padding-left:12%;
 }
+
+/*.pic {*/
+/*    padding:0% ;*/
+/*    border: black;*/
+/*    border-radius: 15px 50px;*/
+/*}*/
 
 header {
   z-index: 2 !important;
@@ -130,28 +137,71 @@ header {
 .icon-bar {
     position: fixed;
     top: 50%;
+    right:0;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
-/* Style the icon bar links */
+.icon-bar a {
+    display: block;
+    /*width:5%;*/
+    text-align: center;
+    padding: 15%;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    /*margin-left:95%;*/
 
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.facebook {
+    background: #3b5998;
+    color: #f5f6fc;
+    border-radius: 5px 0px 0px 0px ;
+}
+
+.twitter {
+    background: #55ACEE;
+    color: white;
+    /*border-radius:  ;*/
+}
+
+.instagram {
+    background: #d10084;
+    color: white;
+    /*border-radius: 5px ;*/
+}
+
+/*.linkedin {*/
+/*    background: #007bb5;*/
+/*    color: white;*/
+/*    !*border-radius: 5px ;*!*/
+/*}*/
+
+.youtube {
+    background: #bb0000;
+    color: white;
+    border-radius: 0px 0px 0px 5px  ;
+}
+
+.content {
+    margin-left: 75px;
+    font-size: 30px;
+}
 /*End Social*/
 
 
 /*Youtube Videos*/
-
-
-
 body{
     background-color: rgba(6, 2, 2, 0.22);
     color: #fff;
 }
 
-/*.youtube-carousel{*/
-/*    border: 4px solid #e25454;*/
-/*}*/
 
 .video-container {
     position: relative; /* keeps the aspect ratio */
@@ -160,6 +210,7 @@ body{
     margin-bottom: -1px;
     margin-right: -1px;
 }
+
 
 .video-container iframe,
 .video-container object,
@@ -303,53 +354,9 @@ body{
         padding:15px 20px 15px;
     }
 }
-
-
-
-
 /*END Videos*/
 
 /*Side panel*/
-
-/* The sidebar menu */
-/*.sidenav {*/
-/*    height: 78%; !* Full-height: remove this if you want "auto" height *!*/
-/*    width: 160px; !* Set the width of the sidebar *!*/
-/*    position: fixed; !* Fixed Sidebar (stay in place on scroll) *!*/
-/*    z-index: 1; !* Stay on top *!*/
-/*    top: 12%; !* Stay at the top *!*/
-/*    bottom: 12%;*/
-/*    left: 0;*/
-/*    background-color: #111; !* Black *!*/
-/*    overflow-x: hidden; !* Disable horizontal scroll *!*/
-/*    !*padding-top: 20px;*!*/
-/*}*/
-
-/*!* The navigation menu links *!*/
-/*.sidenav a {*/
-/*    padding: 6px 8px 6px 16px;*/
-/*    text-decoration: none;*/
-/*    font-size: 25px;*/
-/*    color: #818181;*/
-/*    display: block;*/
-/*}*/
-
-/*!* When you mouse over the navigation links, change their color *!*/
-/*.sidenav a:hover {*/
-/*    color: #f1f1f1;*/
-/*}*/
-
-/*!* Style page content *!*/
-/*.main {*/
-/*    margin-left: 160px; !* Same as the width of the sidebar *!*/
-/*    padding: 0px 10px;*/
-/*}*/
-
-/*!* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) *!*/
-/*@media screen and (max-height: 450px) {*/
-/*    .sidenav {padding-top: 15px;}*/
-/*    .sidenav a {font-size: 18px;}*/
-/*}*/
 {
     margin: 0;
     font-family: "Lato", sans-serif;
@@ -722,22 +729,11 @@ overflow-y: scroll; //vertical
     padding-top: 100px;
     padding-bottom: 100px;
 }
-/*.content-space-two {*/
-/*    padding: 0px;*/
-/*    margin-bottom: 0px;*/
-/*    color: inherit;*/
-/*    background: url(http://placehold.it/1200x650/cc0000/ffffff) no-repeat center center fixed;*/
-/*    -webkit-background-size: cover;*/
-/*    -moz-background-size: cover;*/
-/*    -o-background-size: cover;*/
-/*    background-size: cover;*/
-/*    padding-top: 100px;*/
-/*    padding-bottom: 100px;*/
-}
+
 .page-break {
-    width: 50%;
-    height: 3px;
-    background-color: #040404;
+    width: 100%;
+    height: 10px;
+    background-color: #f5f6fc;
     margin: 0 auto;
 }
 /*end parallax*/
