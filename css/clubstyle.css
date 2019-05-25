@@ -25,7 +25,7 @@ body {
     padding-left: 160px;
 }
 .container_main{
-    padding:5%;
+    padding-left:12%;
 }
 
 header {
@@ -389,7 +389,7 @@ div.content {
     height: 1000px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 10%) {
     .sidebar {
         width: 100%;
         height: auto;
@@ -419,3 +419,325 @@ div.disabled {
     overflow-x: hidden; //horizontal
 overflow-y: scroll; //vertical
 }
+
+/*Parallax*/
+.content-block-one {
+    padding: 30px;
+    margin-bottom: 0px;
+    color: inherit;
+    background-image: url("../res/swara/abstract-expressionism-abstract-painting-art-1109354.jpg");
+    height: 1000px;
+}
+.content-block-one h1,
+.content-block-one .h1 {
+    color: inherit;
+}
+.content-block-one p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}
+.content-block-one > hr {
+    border-top-color: #020202;
+}
+.container .content-block-one {
+    border-radius: 6px;
+}
+.content-block-one .container {
+    max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .content-block-one {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .container .content-block-one {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    .content-block-one h1,
+    .content-block-one .h1 {
+        font-size: 63px;
+    }
+}
+
+
+.content-block-two {
+    padding: 30px;
+    margin-bottom: 0px;
+    color: inherit;
+    background-image: url("../res/swara/art-art-materials-background-1191710.jpg");
+    height: 1000px;
+}
+.content-block-two h1,
+.content-block-two .h1 {
+    color: inherit;
+}
+.content-block-two p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}
+.content-block-two > hr {
+    border-top-color: #020202;
+}
+.container .content-block-two {
+    border-radius: 6px;
+}
+.content-block-two .container {
+    max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .content-block-two {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .container .content-block-two {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    .content-block-two h1,
+    .content-block-two .h1 {
+        font-size: 63px;
+    }
+}
+
+
+.content-block-three {
+    padding: 30px;
+    margin-bottom: 0px;
+    color: inherit;
+    background-image: url("../res/swara/armchair-art-chair-696407.jpg");
+    height: 1000px;
+}
+.content-block-three h1,
+.content-block-three .h1 {
+    color: inherit;
+}
+.content-block-three p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}
+.content-block-three > hr {
+    border-top-color: #020202;
+}
+.container .content-block-three {
+    border-radius: 6px;
+}
+.content-block-three .container {
+    max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .content-block-three {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .container .content-block-three {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    .content-block-three h1,
+    .content-block-three .h1 {
+        font-size: 63px;
+    }
+}
+
+
+.content-block-four {
+    padding: 30px;
+    margin-bottom: 0px;
+    color: inherit;
+    background-image: url("../res/swara/art-blur-bright-980859.jpg");
+    height: 1000px;
+}
+.content-block-four h1,
+.content-block-four .h1 {
+    color: inherit;
+}
+.content-block-four p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}
+.content-block-four > hr {
+    border-top-color: #020202;
+}
+.container .content-block-four {
+    border-radius: 6px;
+}
+.content-block-two .container {
+    max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .content-block-four {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .container .content-block-four {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    .content-block-four h1,
+    .content-block-four .h1 {
+        font-size: 63px;
+    }
+}
+
+
+.content-block-four {
+    padding: 30px;
+    margin-bottom: 0px;
+    color: inherit;
+    background-image: url("../res/swara/art-artistic-background-1279813.jpg");
+    height: 1000px;
+}
+.content-block-four h1,
+.content-block-four .h1 {
+    color: inherit;
+}
+.content-block-four p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}
+.content-block-four > hr {
+    border-top-color: #020202;
+}
+.container .content-block-four {
+    border-radius: 6px;
+}
+.content-block-four .container {
+    max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .content-block-four {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .container .content-block-four {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    .content-block-four h1,
+    .content-block-four .h1 {
+        font-size: 63px;
+    }
+}
+
+
+.content-block-five {
+    padding: 30px;
+    margin-bottom: 0px;
+    color: inherit;
+    background-image: url("../res/swara/camera-camera-equipment-camera-lens-1595233.jpg");
+    height: 1000px;
+}
+.content-block-five h1,
+.content-block-five .h1 {
+    color: inherit;
+}
+.content-block-five p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}
+.content-block-five > hr {
+    border-top-color: #020202;
+}
+.container .content-block-five {
+    border-radius: 6px;
+}
+.content-block-five .container {
+    max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .content-block-five {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .container .content-block-five {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    .content-block-five h1,
+    .content-block-five .h1 {
+        font-size: 63px;
+    }
+}
+
+
+.content-block-six {
+    padding: 30px;
+    margin-bottom: 0px;
+    color: inherit;
+    background-image: url("../res/swara/classic-close-up-dark-358666.jpg");
+    height: 1000px;
+}
+.content-block-six h1,
+.content-block-six .h1 {
+    color: inherit;
+}
+.content-block-six p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}
+.content-block-six > hr {
+    border-top-color: #020202;
+}
+.container .content-block-six {
+    border-radius: 6px;
+}
+.content-block-six .container {
+    max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .content-block-six {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .container .content-block-six {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    .content-block-six h1,
+    .content-block-six .h1 {
+        font-size: 63px;
+    }
+}
+
+
+
+
+.content-space-one {
+    padding: 0px;
+    margin-bottom: 0px;
+    color: inherit;
+    background-image: url("../res/swara/black.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/*.content-space-two {*/
+/*    padding: 0px;*/
+/*    margin-bottom: 0px;*/
+/*    color: inherit;*/
+/*    background: url(http://placehold.it/1200x650/cc0000/ffffff) no-repeat center center fixed;*/
+/*    -webkit-background-size: cover;*/
+/*    -moz-background-size: cover;*/
+/*    -o-background-size: cover;*/
+/*    background-size: cover;*/
+/*    padding-top: 100px;*/
+/*    padding-bottom: 100px;*/
+}
+.page-break {
+    width: 50%;
+    height: 3px;
+    background-color: #040404;
+    margin: 0 auto;
+}
+/*end parallax*/
