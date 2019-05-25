@@ -48,6 +48,7 @@ Form
   margin-bottom: 20px;
   font-size: 2rem;
   border-bottom: 1px solid #ecf0f1;
+  text-align: center;
 }
 .cd-form div {
   /* form element wrapper */
