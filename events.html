@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lan="en">
 <head>
     <meta charset="utf-8" />
     <title>Events</title>
@@ -29,7 +29,6 @@
 
 
 
-</head>
 <body>
 
 
@@ -41,9 +40,10 @@
             <ul>
                 <li><a href="./home.html" >HOME</a></li>
                 <li><a href="./clubs.html" >CLUBS</a></li>
-                <li><a href="./society.html">SOCIETIES</a></li>
+                <li><a href="./societies.html">SOCIETIES</a></li>
                 <li><a href="./events.html" class="active">EVENTS</a></li>
                 <li><a href="./gallery.html">GALLERY</a></li>
+                <li><a href="./contact.html">CONTACT US</a></li>
             </ul>
         </nav>
         <div class="clearfix"></div>
@@ -160,7 +160,11 @@
                           deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
+        </div>
 
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
 
     <!-- Past events ends here -->
@@ -181,6 +185,14 @@
         depth: 100,
         modifier: 1,
         slideShadows : true,
+      },
+      autoplay: {
+       delay: 2000,
+       disableOnInteraction: false,
+     },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
       pagination: {
         el: '.swiper-pagination',
@@ -215,15 +227,17 @@
         <h3>Culturals</h3>
 
         <p class="footer-links">
-          <a href="#">Home</a>
+          <a href="./home.html">Home</a>
           ·
-          <a href="#">Clubs</a>
+          <a href="./clubs.html">Clubs</a>
           ·
-          <a href="#">Societies</a>
+          <a href="./societies.html">Societies</a>
           ·
-          <a href="#">Events</a>
+          <a href="./events.html">Events</a>
           ·
-          <a href="#">Gallery</a>
+          <a href="./gallery.html">Gallery</a>
+          ·
+          <a href="./contact.html">Contact Us</a>
         </p>
 
         <p class="footer-company-name">Culturals, IIT Bhilai &copy; 2019</p>
@@ -269,6 +283,52 @@
 
     </footer>
     <!--Footer ends here-->
+
+    <!--Top arrow starts here-->
+
+    <a href="#" class="to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <style>
+    .to-top {
+    	position: fixed;
+    	bottom: 20px;
+    	right: 25px;
+      text-decoration: none;
+      background: #0085c4;
+    	color: #fff;
+    	padding: 9px 12px;
+      border-radius: 50%;
+      z-index: 5 !important;
+      display: none;
+    }
+    .to-top:hover{
+      background: #000;
+    	color:  #0085c4;
+
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+    	jQuery(document).ready(function() {
+    		var duration = 100;
+    		jQuery(window).scroll(function() {
+    			if (jQuery(this).scrollTop() > 200) {
+    				jQuery('.to-top').fadeIn(duration);
+    			} else {
+    				jQuery('.to-top').fadeOut(duration);
+    			}
+    		});
+
+    		jQuery('.to-top').click(function(event) {
+    			event.preventDefault();
+    			jQuery('html').animate({scrollTop: 0}, duration);
+    			return false;
+    		})
+    	});
+    </script>
+
+    <!--Top arrow ends here-->
+
     <!--Nav Bar JS code starts here-->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 

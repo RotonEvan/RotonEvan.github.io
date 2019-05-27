@@ -273,6 +273,16 @@ a {
       border-radius: 8px;
 
     }
+    /*Style for arrow where 0085c4 is the hex code of the arrow key*/
+    .swiper-button-prev {
+      background-image: url("../res/events/left-arrow.svg");
+      outline: none !important;
+    }
+
+    .swiper-button-next {
+      background-image: url("../res/events/right-arrow.svg");
+      outline: none !important;
+    }
 
 
 @media(max-width:1100px)
