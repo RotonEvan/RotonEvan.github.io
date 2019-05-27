@@ -43,6 +43,9 @@ body {
   height: 100vh;
   background-image: url("../res/contact/1.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
   transition: .15s ease-in-out;
   transition-property: background-position;
   -webkit-transition: .15s ease-in-out;
