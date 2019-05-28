@@ -1,5 +1,4 @@
 @import "navbarstyle.css";
-@import "footerstyle.css";
 
 a {
     text-decoration: none !important;
@@ -20,29 +19,41 @@ body {
     background-size: cover;
     /*overflow: hidden;*/
 }
-
-.club_content{
-    padding-left: 160px;
-}
-
-.container_main{
-    padding-left:12%;
-}
-
-/*.pic {*/
-/*    padding:0% ;*/
-/*    border: black;*/
-/*    border-radius: 15px 50px;*/
-/*}*/
-
-header {
-  z-index: 2 !important;
-  margin-bottom: 3rem;
-}
-
 .heading {
     color: white;
 }
+/*menu*/
+.menu-toggle {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.menu-toggle a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.menu-toggle a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* Main content */
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+
+/*Gallery*/
 .gallery {
     margin:5%;
 }
@@ -59,15 +70,19 @@ header {
     background-size: cover;
 }
 
-.main_club_heading {
+.main_club_headings {
     text-align: center;
-    padding-bottom: 15%;
-    padding-top: 20%;
-    padding-left: 18%;
-    padding-right: 12%;
-
+    padding-top: 15%;
+    padding-bottom: 20%;
     color: White !important;
 }
+.main_club_heading {
+    text-align: center;
+    font-size:340%;
+    color: White !important;
+}
+
+
 .cool_fact_name{
     color: white;
 }
@@ -127,81 +142,21 @@ header {
 .fa-music:hover  {
     color: magenta ;
 }
-.fa-music:active  {
-    color: magenta ;
-}
 /*Club selection ends*/
 
 
 /*Social media*/
-.icon-bar {
-    position: fixed;
-    top: 50%;
-    right:0;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
 
-.icon-bar a {
-    display: block;
-    /*width:5%;*/
-    text-align: center;
-    padding: 15%;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 20px;
-    /*margin-left:95%;*/
-
-}
-
-.icon-bar a:hover {
-    background-color: #000;
-}
-
-.facebook {
-    background: #3b5998;
-    color: #f5f6fc;
-    border-radius: 5px 0px 0px 0px ;
-}
-
-.twitter {
-    background: #55ACEE;
-    color: white;
-    /*border-radius:  ;*/
-}
-
-.instagram {
-    background: #d10084;
-    color: white;
-    /*border-radius: 5px ;*/
-}
-
-/*.linkedin {*/
-/*    background: #007bb5;*/
-/*    color: white;*/
-/*    !*border-radius: 5px ;*!*/
-/*}*/
-
-.youtube {
-    background: #bb0000;
-    color: white;
-    border-radius: 0px 0px 0px 5px  ;
-}
-
-.content {
-    margin-left: 75px;
-    font-size: 30px;
-}
-/*End Social*/
+/*End Socila*/
 
 
 /*Youtube Videos*/
-body{
-    background-color: rgba(6, 2, 2, 0.22);
-    color: #fff;
-}
 
+
+
+.youtube-carousel{
+    margin: 5%;
+}
 
 .video-container {
     position: relative; /* keeps the aspect ratio */
@@ -210,7 +165,6 @@ body{
     margin-bottom: -1px;
     margin-right: -1px;
 }
-
 
 .video-container iframe,
 .video-container object,
@@ -251,7 +205,7 @@ body{
     display: none;
 }
 
-.carousel-control:hover {
+.carousel-control {
     text-decoration: none;
     filter: alpha(opacity=60);
     outline: 0;
@@ -268,7 +222,7 @@ body{
     transform: translate(0,-50%);
     -moz-border-radius: 0 90px 90px 0;
     -webkit-border-radius: 0 90px 90px 0;
-    background-color: rgba(0, 0, 0, 0.48);
+    background-color: rgba(226, 84, 84, 0);
     display: inline-block;
     position: relative;
     float:left;
@@ -286,7 +240,7 @@ body{
     transform: translate(0,-50%);
     -moz-border-radius: 90px 0 0 90px;
     -webkit-border-radius: 90px 0 0 90px;
-    background-color: rgba(0, 0, 0, 0.48);
+    background-color: rgba(226, 84, 84, 0);
     display: inline-block;
     position: relative;
     float:right;
@@ -297,7 +251,7 @@ body{
 
 .carousel-caption {
     display: none;
-    /*background: none repeat scroll 0 0 #ffffff;*/
+    background: none repeat scroll 0 0 rgba(226, 84, 84, 0);
     bottom: 0;
     font-size: 12px;
     text-align: center;
@@ -354,64 +308,37 @@ body{
         padding:15px 20px 15px;
     }
 }
-/*END Videos*/
 
-/*Side panel*/
-{
-    margin: 0;
-    font-family: "Lato", sans-serif;
-}
 
-.sidebar {
-    margin: 0;
-    padding: 0;
-    width: 150px;
-    background-color: rgba(28, 28, 28, 0.77);
-    position: fixed;
-    top:100px;
-    height: 80%;
-    overflow: auto;
-}
+/*Youtube videos end*/
 
-.sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-}
 
-.sidebar a.active {
-    /*background-color: #4CAF50;*/
-    color: white;
-}
-
-.sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
-
-div.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-}
-
-@media screen and (max-width: 10%) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
+<!--Gallery Style-->
+    .jssorl-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 1.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
+
+@keyframes jssorl-009-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
-@media screen and (max-width: 400px) {
-    .sidebar a {
-        text-align: center;
-        float: none;
-    }
-}
+/*jssor slider bullet skin 057 css*/
+.jssorb057 .i {position:absolute;cursor:pointer;}
+.jssorb057 .i .b {fill:none;stroke:#fff;stroke-width:2000;stroke-miterlimit:10;stroke-opacity:0.4;}
+.jssorb057 .i:hover .b {stroke-opacity:.7;}
+.jssorb057 .iav .b {stroke-opacity: 1;}
+.jssorb057 .i.idn {opacity:.3;}
+
+/*jssor slider arrow skin 073 css*/
+.jssora073 {display:block;position:absolute;cursor:pointer;}
+.jssora073 .a {fill:#ddd;fill-opacity:.7;stroke:#000;stroke-width:160;stroke-miterlimit:10;stroke-opacity:.7;}
+.jssora073:hover {opacity:.8;}
+.jssora073.jssora073dn {opacity:.4;}
+.jssora073.jssora073ds {opacity:.3;pointer-events:none;}
 
 
 .header {
@@ -422,318 +349,60 @@ div.content {
     z-index: 2;
 }
 
-div.disabled {
-    overflow-x: hidden; //horizontal
-overflow-y: scroll; //vertical
-}
-
 /*Parallax*/
-.content-block-one {
-    padding: 30px;
-    margin-bottom: 0px;
-    color: inherit;
-    background-image: url("../res/swara/abstract-expressionism-abstract-painting-art-1109354.jpg");
-    height: 1000px;
-}
-.content-block-one h1,
-.content-block-one .h1 {
-    color: inherit;
-}
-.content-block-one p {
-    margin-bottom: 15px;
-    font-size: 21px;
-    font-weight: 200;
-}
-.content-block-one > hr {
-    border-top-color: #020202;
-}
-.container .content-block-one {
-    border-radius: 6px;
-}
-.content-block-one .container {
-    max-width: 100%;
-}
-@media screen and (min-width: 768px) {
-    .content-block-one {
-        padding-top: 48px;
-        padding-bottom: 48px;
-    }
-    .container .content-block-one {
-        padding-right: 60px;
-        padding-left: 60px;
-    }
-    .content-block-one h1,
-    .content-block-one .h1 {
-        font-size: 63px;
-    }
-}
-
-
-.content-block-two {
-    padding: 30px;
-    margin-bottom: 0px;
-    color: inherit;
-    background-image: url("../res/swara/art-art-materials-background-1191710.jpg");
-    height: 1000px;
-}
-.content-block-two h1,
-.content-block-two .h1 {
-    color: inherit;
-}
-.content-block-two p {
-    margin-bottom: 15px;
-    font-size: 21px;
-    font-weight: 200;
-}
-.content-block-two > hr {
-    border-top-color: #020202;
-}
-.container .content-block-two {
-    border-radius: 6px;
-}
-.content-block-two .container {
-    max-width: 100%;
-}
-@media screen and (min-width: 768px) {
-    .content-block-two {
-        padding-top: 48px;
-        padding-bottom: 48px;
-    }
-    .container .content-block-two {
-        padding-right: 60px;
-        padding-left: 60px;
-    }
-    .content-block-two h1,
-    .content-block-two .h1 {
-        font-size: 63px;
-    }
-}
-
-
-.content-block-three {
-    padding: 30px;
-    margin-bottom: 0px;
-    color: inherit;
-    background-image: url("../res/swara/armchair-art-chair-696407.jpg");
-    height: 1000px;
-}
-.content-block-three h1,
-.content-block-three .h1 {
-    color: inherit;
-}
-.content-block-three p {
-    margin-bottom: 15px;
-    font-size: 21px;
-    font-weight: 200;
-}
-.content-block-three > hr {
-    border-top-color: #020202;
-}
-.container .content-block-three {
-    border-radius: 6px;
-}
-.content-block-three .container {
-    max-width: 100%;
-}
-@media screen and (min-width: 768px) {
-    .content-block-three {
-        padding-top: 48px;
-        padding-bottom: 48px;
-    }
-    .container .content-block-three {
-        padding-right: 60px;
-        padding-left: 60px;
-    }
-    .content-block-three h1,
-    .content-block-three .h1 {
-        font-size: 63px;
-    }
-}
-
-
-.content-block-four {
-    padding: 30px;
-    margin-bottom: 0px;
-    color: inherit;
-    background-image: url("../res/swara/art-blur-bright-980859.jpg");
-    height: 1000px;
-}
-.content-block-four h1,
-.content-block-four .h1 {
-    color: inherit;
-}
-.content-block-four p {
-    margin-bottom: 15px;
-    font-size: 21px;
-    font-weight: 200;
-}
-.content-block-four > hr {
-    border-top-color: #020202;
-}
-.container .content-block-four {
-    border-radius: 6px;
-}
-.content-block-two .container {
-    max-width: 100%;
-}
-@media screen and (min-width: 768px) {
-    .content-block-four {
-        padding-top: 48px;
-        padding-bottom: 48px;
-    }
-    .container .content-block-four {
-        padding-right: 60px;
-        padding-left: 60px;
-    }
-    .content-block-four h1,
-    .content-block-four .h1 {
-        font-size: 63px;
-    }
-}
-
-
-.content-block-four {
-    padding: 30px;
-    margin-bottom: 0px;
-    color: inherit;
-    background-image: url("../res/swara/art-artistic-background-1279813.jpg");
-    height: 1000px;
-}
-.content-block-four h1,
-.content-block-four .h1 {
-    color: inherit;
-}
-.content-block-four p {
-    margin-bottom: 15px;
-    font-size: 21px;
-    font-weight: 200;
-}
-.content-block-four > hr {
-    border-top-color: #020202;
-}
-.container .content-block-four {
-    border-radius: 6px;
-}
-.content-block-four .container {
-    max-width: 100%;
-}
-@media screen and (min-width: 768px) {
-    .content-block-four {
-        padding-top: 48px;
-        padding-bottom: 48px;
-    }
-    .container .content-block-four {
-        padding-right: 60px;
-        padding-left: 60px;
-    }
-    .content-block-four h1,
-    .content-block-four .h1 {
-        font-size: 63px;
-    }
-}
-
-
-.content-block-five {
-    padding: 30px;
-    margin-bottom: 0px;
-    color: inherit;
-    background-image: url("../res/swara/camera-camera-equipment-camera-lens-1595233.jpg");
-    height: 1000px;
-}
-.content-block-five h1,
-.content-block-five .h1 {
-    color: inherit;
-}
-.content-block-five p {
-    margin-bottom: 15px;
-    font-size: 21px;
-    font-weight: 200;
-}
-.content-block-five > hr {
-    border-top-color: #020202;
-}
-.container .content-block-five {
-    border-radius: 6px;
-}
-.content-block-five .container {
-    max-width: 100%;
-}
-@media screen and (min-width: 768px) {
-    .content-block-five {
-        padding-top: 48px;
-        padding-bottom: 48px;
-    }
-    .container .content-block-five {
-        padding-right: 60px;
-        padding-left: 60px;
-    }
-    .content-block-five h1,
-    .content-block-five .h1 {
-        font-size: 63px;
-    }
-}
-
-
-.content-block-six {
-    padding: 30px;
-    margin-bottom: 0px;
-    color: inherit;
-    background-image: url("../res/swara/classic-close-up-dark-358666.jpg");
-    height: 1000px;
-}
-.content-block-six h1,
-.content-block-six .h1 {
-    color: inherit;
-}
-.content-block-six p {
-    margin-bottom: 15px;
-    font-size: 21px;
-    font-weight: 200;
-}
-.content-block-six > hr {
-    border-top-color: #020202;
-}
-.container .content-block-six {
-    border-radius: 6px;
-}
-.content-block-six .container {
-    max-width: 100%;
-}
-@media screen and (min-width: 768px) {
-    .content-block-six {
-        padding-top: 48px;
-        padding-bottom: 48px;
-    }
-    .container .content-block-six {
-        padding-right: 60px;
-        padding-left: 60px;
-    }
-    .content-block-six h1,
-    .content-block-six .h1 {
-        font-size: 63px;
-    }
-}
-
-
-
-
-.content-space-one {
-    padding: 0px;
-    margin-bottom: 0px;
-    color: inherit;
-    background-image: url("../res/swara/black.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+/* Header Parallax Element Style*/
+.paral {
+    min-height: 600px;
+    background-attachment: fixed;
     background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    background-position: 50% 50%;
 }
 
-.page-break {
-    width: 100%;
-    height: 10px;
-    background-color: #f5f6fc;
-    margin: 0 auto;
+/* Paragraph for Parallax Section */
+.paral p {
+    font-size: 24px;
+    color: aquamarine;
+    opacity: 50%;
+    text-align: center;
+    line-height: 60px;
 }
-/*end parallax*/
+
+/* Heading for Parallax Section */
+.paral h1 {
+    color: aquamarine;
+    opacity: 30%;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 60px;
+    line-height: 100px;
+}
+/* Image for Parallax Section */
+.paralsec {
+    background-image: url("../res/swara/black.jpg");
+}
+
+.paralsec1 {
+    background-image: url("../res/swara/background.jpg");}
+
+.paralsec2 {
+    background-image: url("../res/swara/blackncolor.jpg");
+}
+.paralsec3 {
+    background-image: url("../res/swara/background.jpg");}
+
+.paralsec4 {
+    background-image: url("../res/swara/blackncolor.jpg");
+}
+
+/* Add more images for more sections */
+
+
+/*!*Events*!*/
+/*element.style {*/
+/*}*/
+/*#schedule {*/
+/*    padding: 60px 0 60px 0;*/
+/*}*/
+/*.section-with-bg {*/
+/*    background-color: #f6f7fd;*/
+/*}*/
