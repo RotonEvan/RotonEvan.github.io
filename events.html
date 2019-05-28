@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
 
+
+
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" media="screen" href="css/eventstyle.css" />
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
 
@@ -32,6 +33,12 @@
 <body>
 
 
+  <script>
+  window.onresize = function(event)
+{
+document.location.reload(true);
+}
+  </script>
     <!--Navigation Bar starts here-->
     <header id="navbar">
         <a href="#" class="cult-logo">Culturals</a>
@@ -57,20 +64,23 @@
     <div class="timeline swiper-container">
         <div class="swiper-wrapper">
                 <div class="box js--fadeInLeft box-left swiper-slide" >
-                  <div class="imgBx">
-                          <img src="res/events/cult_nite.jpg"  alt="CULT NITE">
-                  </div>
-                  <div class="content">
-                      <h3>Cult Nite</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                         irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                         deserunt mollit anim id est laborum.</p>
+                  <div class="box-content rm">
+                    <div class="imgBx">
+                            <img src="res/events/cult_nite.jpg"  alt="CULT NITE">
+                    </div>
+                    <div class="content">
+                        <h3>Cult Nite</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                           exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                           irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                           deserunt mollit anim id est laborum.</p>
+                    </div>
                   </div>
                 </div>
                 <div class="box js--fadeInRight box-right swiper-slide" >
+                  <div class="box-content rm">
                     <div class="imgBx">
                             <img src="res/events/reverb.jpg"  alt="REVERB">
                     </div>
@@ -83,9 +93,11 @@
                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                            deserunt mollit anim id est laborum.</p>
                     </div>
+                  </div>
                 </div>
 
                 <div class="box js--fadeInLeft box-left swiper-slide" >
+                  <div class="box-content rm">
                     <div class="imgBx">
                         <img src="res/events/xpressions.jpg"  alt="XPRESSIONS">
                     </div>
@@ -98,9 +110,11 @@
                           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                           deserunt mollit anim id est laborum.</p>
                     </div>
+                  </div>
                 </div>
 
                 <div class="box js--fadeInRight box-right swiper-slide" >
+                  <div class="box-content rm">
                     <div class="imgBx">
                             <img src="res/events/drama_nite.jpg"  alt="DRAMA NITE">
                     </div>
@@ -113,10 +127,11 @@
                           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                           deserunt mollit anim id est laborum.</p>
                     </div>
-
+                  </div>
                 </div>
 
                 <div class="box js--fadeInLeft box-left swiper-slide" >
+                  <div class="box-content rm">
                     <div class="imgBx">
                         <img src="res/events/literary_day.jpg"  alt="LITERARY DAY">
                     </div>
@@ -129,9 +144,11 @@
                           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                           deserunt mollit anim id est laborum.</p>
                     </div>
+                  </div>
                 </div>
 
                 <div class="box js--fadeInRight box-right swiper-slide" >
+                  <div class="box-content rm">
                     <div class="imgBx">
                             <img src="res/events/mun.jpg"  alt="MUN">
                     </div>
@@ -144,9 +161,11 @@
                           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                            deserunt mollit anim id est laborum.</p>
                     </div>
+                  </div>
                 </div>
 
                 <div class="box js--fadeInLeft box-left swiper-slide" >
+                  <div class="box-content rm">
                     <div class="imgBx">
                         <img src="res/events/tps.jpg"  alt="TPS">
                     </div>
@@ -159,6 +178,7 @@
                           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                           deserunt mollit anim id est laborum.</p>
                     </div>
+                  </div>
                 </div>
         </div>
 
@@ -172,8 +192,14 @@
     <!-- Swiper JS -->
   <script src="js/swiper.min.js"></script>
 
-  <!-- Initialize Swiper -->
   <script>
+      window.onresize = function(event)
+    {
+    document.location.reload(true);
+    }
+  </script>
+  <!-- Initialize Swiper -->
+  <!-- <script>
     var swiper = new Swiper('.swiper-container', {
       effect: 'coverflow',
       grabCursor: true,
@@ -198,8 +224,14 @@
         el: '.swiper-pagination',
       },
     });
-  </script>
+  </script> -->
 
+  <!-- Events js script link start here-->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+  <script src="js/events.js"></script>
+
+  <!-- Events js script link ends here-->
     <!-- Upcoming events starts here -->
     <section class="upcoming-event">
       <h1 class="event-header">Upcoming Event</h1>
@@ -207,16 +239,9 @@
       <img src="./res/events/event1.jpg" alt="Ciao - cultural eve | Student Mentorship Programme 2019" style="max-width: 1080px; max-height: 607.5px;">
       <!-- <p><a href="./events.html">See more events...</a></p> -->
     </section>
-
-
     <!-- Upcoming events ends here -->
 
-    <!-- Events js script link start here-->
-    <!-- <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-    <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
-    <script src="js/events.js"></script> -->
 
-    <!-- Events js script link ends here-->
 
 
     <!--Footer starts here-->
