@@ -124,7 +124,7 @@
   height: 100%;
   bottom: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .box .content h3 {
@@ -135,12 +135,14 @@
 }
 
 .box .content p {
-  margin: 10px 0 0;
+  margin: 40px 0 0;
   padding: 0;
   opacity: 0;
   line-height: 1.2em;
   transition: 0.5s;
-  text-align: justify;
+  text-align: center;
+  min-width: 25ch;
+  font-size: 18px;
 }
 
 .box:hover .content p {

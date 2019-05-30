@@ -62,7 +62,8 @@ header {
 }
 
 .welcome-to-cult .welcome {
-  font-family: 'Baloo Bhai', cursive;
+  font-family: 'Arvo', serif;
+  font-weight: bold;
   font-size: 8rem;
 }
 
@@ -92,7 +93,8 @@ header {
 }
 
 .meet-clubs .clubs-header {
-  font-family: 'Baloo Bhai', cursive;
+  font-family: 'Arvo', serif;
+  font-weight: bold;
   font-size: 7rem;
 }
 
@@ -113,7 +115,8 @@ header {
 
 .upcoming-event .event-header {
   position: relative;
-  font-family: 'Baloo Bhai', cursive;
+  font-family: 'Arvo', serif;
+  font-weight: bold;
   font-size: 7rem;
 }
 
