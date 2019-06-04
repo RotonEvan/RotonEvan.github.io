@@ -1,5 +1,6 @@
 @import "navbarstyle.css";
 @import "sidebar.css";
+@import "dropdown.css";
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 header a {
@@ -23,6 +24,10 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.75);
   border-radius: 0 !important;
   z-index: 2 !important;
+}
+
+.hide {
+  visibility: hidden;
 }
 
 .sidebar a {
