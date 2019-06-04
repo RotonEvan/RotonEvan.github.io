@@ -1,6 +1,7 @@
 @import "navbarstyle.css";
 @import "sidebar.css";
-@import "dropdown.css";
+/* @import "dropdown.css"; */
+@import "dropdown2.css";
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 header a {
@@ -21,7 +22,7 @@ header {
   top: 0;
   width: 100%;
   background-color: #5b5b5b !important;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.75);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.75); */
   border-radius: 0 !important;
   z-index: 2 !important;
 }
@@ -94,8 +95,8 @@ header {
   font-weight: bold;
 }
 
-.club-content {
-  margin-left: 75px;
+.clubs-content {
+  /* margin-left: 75px; */
   overflow-x: hidden;
 }
 
@@ -111,7 +112,8 @@ header {
   left: 50%;
   transform: translateX(-50%);
   position: relative;
-  margin: 80px auto;
+  /* margin: 80px auto; */
+  margin-bottom: 80px;
 }
 
 .content .club-desc {
@@ -150,4 +152,26 @@ header {
   transform: translateX(-50%);
   position: relative;
   margin: 80px auto;
+}
+
+.dropdown2 {
+  visibility: hidden;
+}
+
+@media (max-width: 920px) {
+  .sidebar {
+    visibility: hidden;
+  }
+
+  .dropdown2 {
+    visibility: visible;
+  }
+
+  .clubs-content {
+    margin-left: -75px;
+  }
+
+  .content {
+    margin-left: 0px;
+  }
 }

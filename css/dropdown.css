@@ -10,12 +10,13 @@
   transition: 0.5s;
   left: 50%;
   transform: translateX(-50%);
-  margin-left: -0px;
+  margin-left: -20px;
   position: relative;
 }
 
 .dropdown ul {
   height: 60px;
+  width: 100%;
   /* display: none; */
 }
 
@@ -29,6 +30,7 @@ li:before {
   list-style-type: none;
   background-color: #333;
   line-height: 60px;
+  width: 100%;
 }
 
 .dropdown a {

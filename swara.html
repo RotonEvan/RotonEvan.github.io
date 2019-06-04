@@ -50,34 +50,34 @@
   </header>
 
 
-  <div data-component="sidebar hide">
-    <div class="sidebar hide">
+  <div data-component="sidebar">
+    <div class="sidebar">
       <ul class="list-group flex-column d-inline-block first-menu">
         <li class="list-group-item pl-3 py-2 active">
-          <a href="./swara.html"><i class="flaticon-mic" aria-hidden="true"><span class="ml-2 align-middle">Swara</span></i></a>
+          <a href="./swara.html"><i class="flaticon-mic"><span class="ml-2 align-middle">Swara</span></i></a>
         </li> <!-- /.list-group-item -->
 
         <li class="list-group-item pl-3 py-2">
-          <a href="./beathackers.html"><i class="flaticon-choreography" aria-hidden="true"><span class="ml-2 align-middle">Beathackers</span></i></a>
+          <a href="./beathackers.html"><i class="flaticon-choreography"><span class="ml-2 align-middle">Beathackers</span></i></a>
         </li> <!-- /.list-group-item -->
 
         <li class="list-group-item pl-3 py-2">
           <a href="./drishya.html">
-            <i class="flaticon-drama" aria-hidden="true"><span class="ml-2 align-middle">Drishya</span></i>
+            <i class="flaticon-drama"><span class="ml-2 align-middle">Drishya</span></i>
           </a>
         </li> <!-- /.list-group-item -->
 
 
         <li class="list-group-item pl-3 py-2">
-          <a href="./quizzotica.html"><i class="flaticon-question" aria-hidden="true"><span class="ml-2 align-middle">Quizzotica</span></i></a>
+          <a href="./quizzotica.html"><i class="flaticon-question"><span class="ml-2 align-middle">Quizzotica</span></i></a>
         </li>
 
         <li class="list-group-item pl-3 py-2">
-          <a href="./tps.html"><i class="flaticon-photograph" aria-hidden="true"><span class="ml-2 align-middle">The Pixel Snappers</span></i></a>
+          <a href="./tps.html"><i class="flaticon-photograph"><span class="ml-2 align-middle">The Pixel Snappers</span></i></a>
         </li>
 
         <li class="list-group-item pl-3 py-2">
-          <a href="./renaissance.html"><i class="flaticon-paint" aria-hidden="true"><span class="ml-2 align-middle">Renaissance</span></i></a>
+          <a href="./renaissance.html"><i class="flaticon-paint"><span class="ml-2 align-middle">Renaissance</span></i></a>
         </li>
 
 
@@ -86,8 +86,8 @@
   </div>
 
   <!--Dropdown club selector for mobile-->
-  <div class="dropdown">
-    <!-- Swara -->
+  <!-- <div class="dropdown">
+    Swara
     <ul>
       <a href="#"><li class="active">Swara</li></a>
       <a href="#"><li>Beathackers</li></a>
@@ -98,6 +98,15 @@
     </ul>
 
 
+  </div> -->
+
+  <div class="dropdown2">
+    <a href="#" class="active"><i class="flaticon-mic"></i>&nbsp&nbspSwara</a>
+    <a href="#"><i class="flaticon-choreography"></i>&nbsp&nbspBeathackers</a>
+    <a href="#"><i class="flaticon-drama"></i>&nbsp&nbspDrishya</a>
+    <a href="#"><i class="flaticon-question"></i>&nbsp&nbspQuizzotica</a>
+    <a href="#"><i class="flaticon-photograph"></i>&nbsp&nbspThe Pixel Snappers</a>
+    <a href="#"><i class="flaticon-paint"></i>&nbsp&nbspRenaissance</a>
   </div>
 
   <div id="clubs">
@@ -138,6 +147,52 @@
 
 
 
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+  <!--Nav Bar JS code starts here-->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.menu-toggle').click(function() {
+        $('.menu-toggle').toggleClass('active')
+        $('nav').toggleClass('active')
+      })
+    })
+  </script>
+  <script type="text/javascript">
+    window.onscroll = function() {
+      myFunction()
+    };
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop + 1;
+    // var sticky = 0;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+  <!--Nav Bar JS code ends here-->
+
+  <script type="text/javascript">
+    $(window).scroll(function() {
+      if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+        navbar.classList.add("hide");
+      } else {
+        navbar.classList.remove("hide");
+      }
+    });
+  </script>
 
 
 
