@@ -1,5 +1,6 @@
 @import "navbarstyle.css";
 @import "sidebar.css";
+@import "footerstyle.css";
 /* @import "dropdown.css"; */
 @import "dropdown2.css";
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
@@ -11,6 +12,7 @@ header a {
 
 html {
   font-size: 16px;
+
 }
 
 body {
@@ -25,6 +27,11 @@ header {
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.75); */
   border-radius: 0 !important;
   z-index: 2 !important;
+}
+
+.footer-distributed a{
+    text-decoration: none !important;
+    color: #fff !important;
 }
 
 .hide {
@@ -112,18 +119,24 @@ header {
   left: 50%;
   transform: translateX(-50%);
   position: relative;
+
+
   /* margin: 80px auto; */
   margin-bottom: 80px;
 }
 
 .content .club-desc {
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%;
+  transform: translateX(-50%); */
   font-family: 'Quicksand', serif;
   text-align: center;
   font-size: 2.4rem;
-  width: 90ch;
+  margin-left: 40px;
+  margin-right: 40px;
+  /* text-align: justify;
+  text-justify: inherit; */
+  /* width: 90ch; */
   /* margin: 80px auto; */
   margin-bottom: 120px;
 }
@@ -157,6 +170,23 @@ header {
 .dropdown2 {
   visibility: hidden;
 }
+.footer-distributed{
+  margin-left: 75px;
+}
+
+@media(max-width: 1250px)  {
+  .content .club-img{
+    width: 90%;
+    height: auto;
+  }
+
+  .video-content iframe {
+    width: 90%;
+    /* height: 90%; */
+  }
+
+
+}
 
 @media (max-width: 920px) {
   .sidebar {
@@ -172,6 +202,13 @@ header {
   }
 
   .content {
+    /* margin-left: 0px; */
+  }
+  .footer-distributed{
     margin-left: 0px;
   }
+  .video-content iframe{
+    height: 400px;
+  }
+
 }
