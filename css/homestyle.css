@@ -279,11 +279,15 @@ header {
    padding-top: 3em;
    background: rgba(6, 30, 117, 0.8);
   display: inline-block;
-
 }
+
+.menu-div {
+  width: 1200px;
+}
+
 .menu-modal{
   width: 1200px;
-  /*display: inline-block;*/
+  display: flex;
 }
 
 .modal-close {
@@ -304,7 +308,7 @@ header {
 
 .modal-element{
   /*margin: 0.2em;*/
-  /*width:100px;*/
+  width:100px;
 }
 
 .modal-element:hover{
