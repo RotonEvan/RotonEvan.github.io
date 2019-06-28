@@ -268,25 +268,27 @@ header {
    pointer-events: auto;
    }
 .modal-window-div {
-   width: 80%;
+   width: 65%;
    height: 230px;
    position: absolute;
    top: 50%;
    left: 50%;
-   overflow-y: auto;
+   overflow-y: hidden;
    overflow-x: auto;
    transform: translate(-50%, -50%);
    padding-top: 3em;
    background: rgba(6, 30, 117, 0.8);
-  display: inline-block;
+  border-radius: 30px;
+  /*display: inline-block;*/
 }
 
-.menu-div {
-  width: 1200px;
-}
+
+/*.menu-div {*/
+/*  width: 1200px;*/
+/*}*/
 
 .menu-modal{
-  width: 1200px;
+  width: 800px;
   display: flex;
 }
 
@@ -295,13 +297,21 @@ header {
   line-height: 50px;
   /*margin-bottom: 10px;*/
   font-size: 80%;
-  position: absolute;
+  position: fixed;
   right: 0;
   text-align: center;
   top: 0;
   width: 70px;
   text-decoration: none;
+
 }
+
+.modal-close-div{
+  width: 100%;
+  position: fixed;
+  overflow-x: hidden;
+}
+
 .modal-close :hover {
    color: #646567;
  }
@@ -309,6 +319,7 @@ header {
 .modal-element{
   /*margin: 0.2em;*/
   width:100px;
+  margin: 20px;
 }
 
 .modal-element:hover{
@@ -324,14 +335,14 @@ header {
 /*  color: #aaa;*/
 /*}*/
 
-.modal-window .nav>li {
-  display: inline-block;
-}
+/*.modal-window .nav>li {*/
+/*  !*display: inline-block;*!*/
+/*}*/
 
-.modal-div{
-  /*width: 85%;*/
-  width: 1200px;
-}
+/*.modal-div{*/
+/*  !*width: 85%;*!*/
+/*  width: 600px;*/
+/*}*/
 /*.menu-modal ul {*/
 /*  display: inline-block;*/
 /*  list-style-type: none;*/
