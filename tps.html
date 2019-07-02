@@ -39,7 +39,7 @@
     <nav>
       <ul>
         <li><a href="./home.html">HOME</a></li>
-        <li><a href="./clubs.html" class="active">CLUBS</a></li>
+        <li><a href="./tps.html" class="active">CLUBS</a></li>
         <li><a href="./societies.html">SOCIETIES</a></li>
         <li><a href="./events.html">EVENTS</a></li>
         <li><a href="./gallery.html">GALLERY</a></li>
@@ -237,6 +237,29 @@
   <script src="js/main.js"></script> <!-- Resource jQuery -->
 
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+  <!-- modal js begins -->
+
+  <script type="text/javascript">
+    function open() {
+      // console.log("modal opened");
+      var mod = document.getElementById('modal');
+      console.log("modal opened");
+      mod.style.visibility = 'visible';
+      $('.menu-toggle').toggleClass('active');
+      $('nav').toggleClass('active');
+    }
+  </script>
+
+  <script type="text/javascript">
+    function close() {
+      console.log("modal closed");
+      var mod = document.getElementById('modal');
+      mod.style.visibility = 'hidden';
+    }
+  </script>
+
+  <!-- modal js ends -->
 
   <!--Nav Bar JS code starts here-->
   <script type="text/javascript">

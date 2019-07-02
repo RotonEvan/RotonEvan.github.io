@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta charset="utf-8">
@@ -39,7 +40,7 @@
     <nav>
       <ul>
         <li><a href="./home.html">HOME</a></li>
-        <li><a href="./clubs.html" class="active">CLUBS</a></li>
+        <li><a href="./beathackers.html" class="active">CLUBS</a></li>
         <li><a href="./societies.html">SOCIETIES</a></li>
         <li><a href="./events.html">EVENTS</a></li>
         <li><a href="./gallery.html">GALLERY</a></li>
@@ -48,6 +49,7 @@
     </nav>
     <div class="clearfix"></div>
   </header>
+
 
 
   <div data-component="sidebar">
@@ -88,7 +90,7 @@
 
   <div class="dropdown2">
     <div class="toggle"></div>
-    <a  class="active"><i class="flaticon-choreography"></i>&nbsp&nbspBeathackers</a>
+    <a class="active"><i class="flaticon-choreography"></i>&nbsp&nbspBeathackers</a>
     <a href="./swara.html"><i class="flaticon-mic"></i>&nbsp&nbspSwara</a>
     <a href="./drishya.html"><i class="flaticon-drama"></i>&nbsp&nbspDrishya</a>
     <a href="./quizzotica.html"><i class="flaticon-question"></i>&nbsp&nbspQuizzotica</a>
@@ -105,30 +107,39 @@
   <div id="clubs">
     <div class="club-shown" id="Beathackers">
       <div class="clubs-content">
-        <div class="cover-img" id="parallax">
-          <h1>Beathackers<br><span>The Dance Club</span></h1>
+        <div class="cover-img" id="parallax" style="background-image: url('res/clubs/beathackers/bg2.jpg');">
+          <h1 style="">Beathackers<br><span>The Dance Club</span></h1>
           <!-- <p>Let's get to know each other</p> -->
         </div>
 
         <section class="content">
           <div class="intro">
-            <img src="./res/clubs/beathackers/club-img.jpg" alt="Beathackers performing on stage" class="club-img">
+            <img src="./res/clubs/beathackers/club-img2.jpg" alt="Beathackers performing on stage" class="club-img">
             <p class="club-desc"><span style="font-weight: bold;font-size: 4rem;">Beathackers : The Dance Club<br><br></span>
-              LIKE DANCING? GOT SOME SKILLS TO NURTURE? Then there is a perfect platform for you! BeatHackers, The Dance Club of IIT Bhilai.
-              These are some crazy students who love dancing by their soul. They nurture their skills, work hard and dance with their heart out. They had emerged to a good position through their hard work and dedication. The best thing you will find here is every student who has zeal to showcase his/her dancing skills, whose mind start dancing before their feet and those for whom dancing is a way to grace their life gets a chance here.
-              Beathackers host several dancing events throughout the year so that you can train your skills.
-              So, what are you waiting for? Go and hack the beats with them!
-              <strong><em><br>“Dance is the hidden language of the soul.”
-                -Martha Graham</em></strong><br><br>
-              XPRESSION :
+              The most perfect platform to nurture and showcase your dance moves. These are some crazy students
+              who love dancing by their soul. They work hard and dance with their heart out.
+              They have emerged to a good position through their dedication towards dance. Anyone who has a zeal
+              to showcase his or her dance skills, for whom dancing is an emotion, are welcome !
+              Beathackers hosts several dancing events throughout the year.
+              <strong><em><br>“Dance is the hidden language of the soul.” -&nbspMartha Graham</em></strong><br><br>
+
               In this wonderful event, every student of IIT Bhilai gets a chance to show what dancing skills they have, any dance type you like, the stage will be yours to rock hard.
 
             </p>
           </div>
+
+          <div class="event-content">
+            <img src="./res/clubs/beathackers/event-img.jpg" alt="Swara performing on stage" class="event-img">
+            <p class="event-desc"><span style="font-weight: bold;font-size: 4rem;">Xpressions : Annual Dance Event<br><br></span>
+              In this wonderful event, every student of IIT Bhilai gets a chance to show what dancing
+              skills they have. With no bounds to dance genres, the stage is always on fire on
+              the Xprssions Night</p>
+          </div>
+
           <div class="video-content">
-            <p class="desc"><span style="font-weight: bold;font-size: 4rem;">Swara : On stage<br></span>
+            <p class="desc"><span style="font-weight: bold;font-size: 4rem;">Beathackers : On stage<br></span>
               Watch our stage performances <a href="#">here</a></p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/bW5sqyFIxT4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_lfGUdZzpiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </section>
       </div>
@@ -206,23 +217,24 @@
   <a href="#" class="to-top"><i class="fa fa-chevron-up"></i></a>
 
   <style>
-  .to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 25px;
-    text-decoration: none;
-    background: #0085c4;
-    color: #fff;
-    padding: 9px 12px;
-    border-radius: 50%;
-    z-index: 5 !important;
-    display: none;
-  }
-  .to-top:hover{
-    background: #000;
-    color:  #0085c4;
+    .to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 25px;
+      text-decoration: none;
+      background: #0085c4;
+      color: #fff;
+      padding: 9px 12px;
+      border-radius: 50%;
+      z-index: 5 !important;
+      display: none;
+    }
 
-  }
+    .to-top:hover {
+      background: #000;
+      color: #0085c4;
+
+    }
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script>
@@ -238,7 +250,9 @@
 
       jQuery('.to-top').click(function(event) {
         event.preventDefault();
-        jQuery('html').animate({scrollTop: 0}, duration);
+        jQuery('html').animate({
+          scrollTop: 0
+        }, duration);
         return false;
       })
     });
@@ -251,6 +265,29 @@
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+  <!-- modal js begins -->
+
+  <script type="text/javascript">
+    function open() {
+      // console.log("modal opened");
+      var mod = document.getElementById('modal');
+      console.log("modal opened");
+      mod.style.visibility = 'visible';
+      $('.menu-toggle').toggleClass('active');
+      $('nav').toggleClass('active');
+    }
+  </script>
+
+  <script type="text/javascript">
+    function close() {
+      console.log("modal closed");
+      var mod = document.getElementById('modal');
+      mod.style.visibility = 'hidden';
+    }
+  </script>
+
+  <!-- modal js ends -->
 
   <!--Nav Bar JS code starts here-->
   <script type="text/javascript">

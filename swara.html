@@ -39,7 +39,7 @@
     <nav>
       <ul>
         <li><a href="./home.html">HOME</a></li>
-        <li><a href="./clubs.html" class="active">CLUBS</a></li>
+        <li><a href="./swara.html" class="active">CLUBS</a></li>
         <li><a href="./societies.html">SOCIETIES</a></li>
         <li><a href="./events.html">EVENTS</a></li>
         <li><a href="./gallery.html">GALLERY</a></li>
@@ -48,6 +48,7 @@
     </nav>
     <div class="clearfix"></div>
   </header>
+
 
 
   <div data-component="sidebar">
@@ -114,7 +115,7 @@
   <div id="clubs">
     <div class="club-shown" id="Swara">
       <div class="clubs-content">
-        <div class="cover-img" id="parallax">
+        <div class="cover-img" id="parallax" style="background-image: url('res/clubs/swara/bg.jpg');">
           <h1>Swara<br><span>The Music Club</span></h1>
           <!-- <p>Let's get to know each other</p> -->
         </div>
@@ -133,11 +134,21 @@
               and yearly events shape you up and then you are ready to rule the stage in college
               fests and Inter IIT Cultural Meet.</p>
           </div>
+
+          <div class="event-content">
+            <img src="./res/clubs/swara/event-img.jpg" alt="Swara performing on stage" class="event-img">
+            <p class="event-desc"><span style="font-weight: bold;font-size: 4rem;">Reverb : Annual Musical Event<br><br></span>
+              Annual open mic musical night organised by Swara. The only single event where you
+              get to see some <em>chhupe rustoms</em> turn up on stage and set it on fire with their vocals
+              or instrumental skills. A night with no bounds to music, a night to remember forever.</p>
+          </div>
+
           <div class="video-content">
             <p class="desc"><span style="font-weight: bold;font-size: 4rem;">Swara : On stage<br></span>
               Watch our stage performances <a href="#">here</a></p>
             <iframe src="https://www.youtube.com/embed/bW5sqyFIxT4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
+
         </section>
       </div>
     </div>
@@ -264,6 +275,29 @@
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+  <!-- modal js begins -->
+
+  <script type="text/javascript">
+    function open() {
+      // console.log("modal opened");
+      var mod = document.getElementById('modal');
+      console.log("modal opened");
+      mod.style.visibility = 'visible';
+      $('.menu-toggle').toggleClass('active');
+      $('nav').toggleClass('active');
+    }
+  </script>
+
+  <script type="text/javascript">
+    function close() {
+      console.log("modal closed");
+      var mod = document.getElementById('modal');
+      mod.style.visibility = 'hidden';
+    }
+  </script>
+
+  <!-- modal js ends -->
 
   <!--Nav Bar JS code starts here-->
   <script type="text/javascript">

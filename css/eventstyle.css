@@ -1,5 +1,6 @@
 @import "navbarstyle.css";
 @import "footerstyle.css";
+@import "modalstyle.css";
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 @import "swiper.min.css" (max-width: 920px);

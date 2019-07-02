@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/fontAwesome.css">
   <link rel="stylesheet" href="css/light-box.css">
-  <link rel="stylesheet" href="css/templatemo-style.css">
+  <link rel="stylesheet" href="css/gallerystyle.css">
   <link rel="stylesheet" href="css/navbarstyle.css">
   <link rel="stylesheet" href="css/footerstyle.css">
   <link href="https://fonts.googleapis.com/css?family=Stylish" rel="stylesheet">
@@ -34,7 +34,7 @@
     <nav>
       <ul>
         <li><a href="./home.html">HOME</a></li>
-        <li><a href="./clubs.html">CLUBS</a></li>
+        <li><a href="javascript:open()">CLUBS</a></li>
         <li><a href="./societies.html">SOCIETIES</a></li>
         <li><a href="./events.html">EVENTS</a></li>
         <li><a href="./gallery.html" class="active">GALLERY</a></li>
@@ -43,6 +43,53 @@
     </nav>
     <div class="clearfix"></div>
   </header>
+
+  <!--Modal  -->
+  <div id="modal" class="modal-window">
+    <div class="container-fluid modal-window-div">
+      <a href="javascript:close()" title="Close" class="modal-close">Close &times;</a>
+      <div class="modal-div">
+        <ul class="menu-modal">
+
+          <li class="modal-element">
+            <a href="./swara.html"><i class="flaticon-mic">
+                <div class="align-middle">Swara</div>
+              </i></a>
+          </li> <!-- /.list-group-item -->
+
+          <li class="modal-element">
+            <a href="./beathackers.html"><i class="flaticon-choreography">
+                <div class="align-middle">Beathackers</div>
+              </i></a>
+          </li> <!-- /.list-group-item -->
+
+          <li class="modal-element">
+            <a href="./drishya.html"><i class="flaticon-drama">
+                <div class="align-middle">Drishya</div>
+              </i></a>
+          </li> <!-- /.list-group-item -->
+
+          <li class="modal-element">
+            <a href="./quizzotica.html"><i class="flaticon-question">
+                <div class="align-middle">Quizzotica</div>
+              </i></a>
+          </li>
+
+          <li class="modal-element">
+            <a href="./tps.html"><i class="flaticon-photograph">
+                <div class="align-middle">TPS</div>
+              </i></a>
+          </li>
+
+          <li class="modal-element">
+            <a href="./renaissance.html"><i class="flaticon-paint">
+                <div class="align-middle">Renaissance</div>
+              </i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <div class="cover-img" id="parallax">
     <h1>Culturals, IIT Bhilai<br><span>A pictorial representation</span></h1>
@@ -771,6 +818,29 @@
   <script src="js/main.js"></script> <!-- Resource jQuery -->
 
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+  <!-- modal js begins -->
+
+  <script type="text/javascript">
+    function open() {
+      // console.log("modal opened");
+      var mod = document.getElementById('modal');
+      console.log("modal opened");
+      mod.style.visibility = 'visible';
+      $('.menu-toggle').toggleClass('active');
+      $('nav').toggleClass('active');
+    }
+  </script>
+
+  <script type="text/javascript">
+    function close() {
+      console.log("modal closed");
+      var mod = document.getElementById('modal');
+      mod.style.visibility = 'hidden';
+    }
+  </script>
+
+  <!-- modal js ends -->
 
   <script type="text/javascript">
     $(document).ready(function() {

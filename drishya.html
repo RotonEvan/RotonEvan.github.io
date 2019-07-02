@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta charset="utf-8">
@@ -39,7 +40,7 @@
     <nav>
       <ul>
         <li><a href="./home.html">HOME</a></li>
-        <li><a href="./clubs.html" class="active">CLUBS</a></li>
+        <li><a href="./drishya.html" class="active">CLUBS</a></li>
         <li><a href="./societies.html">SOCIETIES</a></li>
         <li><a href="./events.html">EVENTS</a></li>
         <li><a href="./gallery.html">GALLERY</a></li>
@@ -88,7 +89,7 @@
 
   <div class="dropdown2">
     <div class="toggle"></div>
-    <a  class="active"><i class="flaticon-drama"></i>&nbsp&nbspDrishya</a>
+    <a class="active"><i class="flaticon-drama"></i>&nbsp&nbspDrishya</a>
     <a href="./swara.html"><i class="flaticon-mic"></i>&nbsp&nbspSwara</a>
     <a href="./beathackers.html"><i class="flaticon-choreography"></i>&nbsp&nbspBeathackers</a>
     <a href="./quizzotica.html"><i class="flaticon-question"></i>&nbsp&nbspQuizzotica</a>
@@ -112,15 +113,17 @@
           <div class="intro">
             <img src="./res/clubs/drishya/club-img.jpg" alt="Drishya performing on stage" class="club-img">
             <p class="club-desc"><span style="font-weight: bold;font-size: 4rem;">Drishya : The Drama Club<br><br></span>
-              Got that acting ka keeda in you, this might just be your opportunity! With their varied activities and all the enthusiasm, they believe in bringing theatre to another level. Their vision is to get all those interested, a platform to hone each one's individual drama skill. Do join them for all the fun that awaits!
+              Got that acting ka keeda in you, this might just be your opportunity! With their varied activities and all the enthusiasm, they believe in bringing theatre to another level. Their vision is to get all those interested, a platform to
+              hone each one's individual drama skill. Do join them for all the fun that awaits!
               <strong><em><br>All the world’s a stage,
-                And all the men and women merely players;
-                They have their exits and their entrances,
-                And one man in his time plays many parts.
-                ~William Shakespeare
-              </em></strong><br><br>
+                  And all the men and women merely players;
+                  They have their exits and their entrances,
+                  And one man in his time plays many parts.
+                  ~William Shakespeare
+                </em></strong><br><br>
               Drama nite:
-              An annual event exclusive to the Drishya, where each member puts in all their effort into a single play. With the help of mentors, they encapsulate all their work into performance which is not merely an act but a heartfelt connection with its audience. The drama night has all the glamor an actor awaits, totally worth the time.</p>
+              An annual event exclusive to the Drishya, where each member puts in all their effort into a single play. With the help of mentors, they encapsulate all their work into performance which is not merely an act but a heartfelt connection
+              with its audience. The drama night has all the glamor an actor awaits, totally worth the time.</p>
           </div>
           <div class="video-content">
             <p class="desc"><span style="font-weight: bold;font-size: 4rem;">Swara : On stage<br></span>
@@ -202,23 +205,24 @@
   <a href="#" class="to-top"><i class="fa fa-chevron-up"></i></a>
 
   <style>
-  .to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 25px;
-    text-decoration: none;
-    background: #0085c4;
-    color: #fff;
-    padding: 9px 12px;
-    border-radius: 50%;
-    z-index: 5 !important;
-    display: none;
-  }
-  .to-top:hover{
-    background: #000;
-    color:  #0085c4;
+    .to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 25px;
+      text-decoration: none;
+      background: #0085c4;
+      color: #fff;
+      padding: 9px 12px;
+      border-radius: 50%;
+      z-index: 5 !important;
+      display: none;
+    }
 
-  }
+    .to-top:hover {
+      background: #000;
+      color: #0085c4;
+
+    }
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script>
@@ -234,7 +238,9 @@
 
       jQuery('.to-top').click(function(event) {
         event.preventDefault();
-        jQuery('html').animate({scrollTop: 0}, duration);
+        jQuery('html').animate({
+          scrollTop: 0
+        }, duration);
         return false;
       })
     });
@@ -247,6 +253,30 @@
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+
+  <!-- modal js begins -->
+
+  <script type="text/javascript">
+    function open() {
+      // console.log("modal opened");
+      var mod = document.getElementById('modal');
+      console.log("modal opened");
+      mod.style.visibility = 'visible';
+      $('.menu-toggle').toggleClass('active');
+      $('nav').toggleClass('active');
+    }
+  </script>
+
+  <script type="text/javascript">
+    function close() {
+      console.log("modal closed");
+      var mod = document.getElementById('modal');
+      mod.style.visibility = 'hidden';
+    }
+  </script>
+
+  <!-- modal js ends -->
 
   <!--Nav Bar JS code starts here-->
   <script type="text/javascript">
