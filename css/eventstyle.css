@@ -18,7 +18,7 @@ body
     margin: 0;
     padding: 0;
 
-    
+
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -406,7 +406,9 @@ header {
 
 @media(max-width: 920px)
 {
-
+  .body {
+    background-position: left;
+  }
 
   .upcoming-event {
     margin-top: 70px;

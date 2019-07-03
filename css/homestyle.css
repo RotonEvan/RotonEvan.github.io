@@ -196,6 +196,11 @@ header {
 }
 
 @media (max-width: 920px) {
+
+  .body {
+    background-position: left;
+  }
+
   .welcome-to-cult {
     margin-top: 37px;
   }

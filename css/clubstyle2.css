@@ -10,6 +10,10 @@ a {
   text-decoration: none !important;
 }
 
+.sticky {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0);
+}
+
 header a {
   text-decoration: none !important;
   color: #fff !important;
@@ -130,6 +134,18 @@ header {
   margin-bottom: 80px;
 }
 
+.content .event-img {
+  width: 1080px;
+  height: 607.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+
+
+  /* margin: 80px auto; */
+  margin-bottom: 80px;
+}
+
 .content .club-desc {
   position: relative;
   /* left: 50%;
@@ -156,17 +172,7 @@ header {
   margin-bottom: 120px;
 }
 
-.content .event-img {
-  width: 1080px;
-  height: 607.5px;
-  left: 50%;
-  transform: translateX(-50%);
-  position: relative;
 
-
-  /* margin: 80px auto; */
-  margin-bottom: 80px;
-}
 
 .video-content .desc {
   position: relative;
@@ -212,6 +218,16 @@ header {
     /* height: 90%; */
   }
 
+  .content .event-img{
+    width: 90%;
+    height: auto;
+  }
+
+  html {
+    font-size: 8px !important;
+  }
+
+
 
 }
 
@@ -237,5 +253,13 @@ header {
   .video-content iframe{
     height: 400px;
   }
+  .club-img {
+    margin-bottom: 10px;
+  }
+
+  .event-img {
+    margin-bottom: 10px;
+  }
+
 
 }
