@@ -3,40 +3,59 @@
 @import "modalstyle.css";
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
-@import "swiper.min.css" (max-width: 920px);
+@import "swiper.min.css"(max-width: 920px);
+
 a {
-    text-decoration: none !important;
-    color: #fff !important;
+  text-decoration: none !important;
+  color: #fff !important;
 }
-html
-{
+
+html {
   overflow-x: hidden;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
+
 div#preload {
-display: none;
+  display: none;
 }
-body
-{
-    margin: 0;
-    padding: 0;
 
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    /* background-image: url('../res/events/bg1.jpg'); */
-    /* background: #f4f4f4 !important; */
-    font-size: 14px;
-    overflow-x: hidden;
-    width: 100%;
-
+body::before {
+  background-image: url('../res/events/bg2.jpg') !important;
+  background-position: center center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-position: none;
+  position: fixed;
+  content: "";
+  display: block;
+  z-index: -10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: black; */
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center; */
+  /* background-image: url('../res/events/bg1.jpg'); */
+  /* background: #f4f4f4 !important; */
+  font-size: 14px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
 header {
   z-index: 2 !important;
   margin-bottom: 3rem;
 }
+
 /*
   .timeline
   {
@@ -194,124 +213,123 @@ header {
       text-justify: inherit;
       font-family: 'Quicksand', serif;
   } */
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-  }
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
 
-  /* Container around content */
-  .box {
-    padding: 10px 40px;
-    position: relative;
-    width: 50%;
-    /* background:  linear-gradient(315deg, #ff0057, #e64a19); */
-    /* padding: 3px; */
-  }
+/* Container around content */
+.box {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+  /* background:  linear-gradient(315deg, #ff0057, #e64a19); */
+  /* padding: 3px; */
+}
 
-  /* The circles on the timeline */
-  .box::after {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    right: -2px;
-    background-color: white;
-    /* border: 4px solid #f44336; */
-    top: 25px;
-    border-radius: 50%;
-    z-index: 1;
-  }
+/* The circles on the timeline */
+.box::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: -2px;
+  background-color: white;
+  /* border: 4px solid #f44336; */
+  top: 25px;
+  border-radius: 50%;
+  z-index: 1;
+}
 
-  /* Fix the circle for containers on the right side */
-  .box-right::after {
-    left: -8px;
-  }
+/* Fix the circle for containers on the right side */
+.box-right::after {
+  left: -8px;
+}
 
-  /* Place the container to the left */
-  .box-left {
-    left: 0;
-  }
+/* Place the container to the left */
+.box-left {
+  left: 0;
+}
 
-  /* Place the container to the right */
-  .box-right {
-    left: 50%;
-  }
+/* Place the container to the right */
+.box-right {
+  left: 50%;
+}
 
-  /* Add arrows to the left container (pointing right) */
-  .box-left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 26px;
-    border: medium solid white;
-    opacity: 0.7;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-  }
+/* Add arrows to the left container (pointing right) */
+.box-left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 26px;
+  border: medium solid white;
+  opacity: 0.7;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
 
-  /* Add arrows to the right container (pointing left) */
-  .box-right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 26px;
-    border: medium solid white;
-    opacity: 0.7;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
+/* Add arrows to the right container (pointing left) */
+.box-right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 26px;
+  border: medium solid white;
+  opacity: 0.7;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
 
-
-
-  /* The actual content */
-  .box-content {
-    padding: 11px 11px;
-    background-color: rgba(25, 25, 26, 0.8);
-    position: relative;
-    /* border-radius: 8px;
+/* The actual content */
+.box-content {
+  padding: 11px 11px;
+  background-color: rgba(25, 25, 26, 0.8);
+  position: relative;
+  /* border-radius: 8px;
     border-style: solid;
     border-width: 5px;
     border-image:  linear-gradient(315deg, #e91e63, #5d02ff);
     border-image-slice: 1; */
-    /* opacity: 0.8; */
+  /* opacity: 0.8; */
+}
 
-  }
-.box-left .box-content{
+.box-left .box-content {
   border-radius: 8px;
   border-style: solid;
   border-width: 5px;
-  border-image:  linear-gradient(315deg, #e91e63, #5d02ff);
+  border-image: linear-gradient(315deg, #e91e63, #5d02ff);
   border-image-slice: 1;
 }
 
-.box-right .box-content{
+.box-right .box-content {
   border-radius: 8px;
   border-style: solid;
   border-width: 5px;
-  border-image:   linear-gradient(315deg, #89ff00, #00bcd4);
+  border-image: linear-gradient(315deg, #89ff00, #00bcd4);
   border-image-slice: 1;
 }
-  /* .box-content::after {
+
+/* .box-content::after {
     position: absolute;
     top: -4px; bottom: -4px;
     left: -4px; right: -4px;
@@ -323,95 +341,100 @@ header {
     border-image-slice: 1;
     opacity: 0.8;
   } */
+.box-content:hover {
+  box-shadow: 0 15px 30px rgba(255, 204, 255, .5);
+}
 
-  .box-content:hover
-  {
-      box-shadow: 0 15px 30px rgba(255, 204, 255,.5);
-  }
-
-.box .content h3
-{
+.box .content h3 {
   padding-top: 0px;
-  color:  #36b7eb;
+  color: #36b7eb;
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
   font-size: 20px;
-
-}
-.box .imgBx img{
-    max-width: 100%;
-    height: auto;
-    box-sizing: border-box;
-    border-radius: 8px;
 }
 
-.box .content
-{
-    padding-left: 5px;
-
+.box .imgBx img {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
-.box .content p
-{
-    margin: 0;
-    padding: 0px 0 0 ;
-    text-align: justify;
-    text-justify: inherit;
-    font-family: 'Quicksand', serif;
-    color: white;
-    font-size: 16px;
+
+.box .content {
+  padding-left: 5px;
 }
-  .upcoming-event {
-    margin-top: 10rem;
-    margin-bottom: 5rem;
-    position: relative;
-    text-align: center;
-    color: white;
-    z-index: 1 !important;
-  }
 
-  .upcoming-event .event-header {
-    position: relative;
-    font-family: 'Baloo Bhai', cursive;
-    font-size: 7rem;
-  }
+.box .content p {
+  margin: 0;
+  padding: 0px 0 0;
+  text-align: justify;
+  text-justify: inherit;
+  font-family: 'Quicksand', serif;
+  color: white;
+  font-size: 16px;
+}
 
-  .upcoming-event .event-desc {
-    font-family: 'Stylish', sans-serif;
-    font-size: 4rem;
-    color: #f4eb66;
-  }
+.upcoming-event {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 1 !important;
+}
 
-  .upcoming-event img {
-    position: relative;
-    box-sizing: border-box;
-    border-radius: 8px;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
-    margin: 6rem auto;
-    overflow: hidden;
-    width: 96%;
-    height: 96%;
-  }
-  .past-events {
-    position: relative;
-    text-align: center;
-    color: white;
-    z-index: 1 !important;
-  }
+.upcoming-event .event-header {
+  position: relative;
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 7rem;
+}
 
-  .past-events .event-header {
-    position: relative;
-    font-family: 'Baloo Bhai', cursive;
-    font-size: 7rem;
-  }
+.upcoming-event .event-desc {
+  font-family: 'Stylish', sans-serif;
+  font-size: 4rem;
+  color: #f4eb66;
+}
 
+.upcoming-event img {
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  margin: 6rem auto;
+  overflow: hidden;
+  width: 96%;
+  height: 96%;
+}
 
+.past-events {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 1 !important;
+}
 
+.past-events .event-header {
+  position: relative;
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 7rem;
+}
 
-
-@media(max-width: 920px)
-{
-  .body {
-    background-position: left;
+@media only screen and (max-width: 920px) {
+  body::before {
+    background-image: url('res/events/bg2.jpg');
+    background-position: center center !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: none;
+    position: fixed;
+    content: "";
+    display: block;
+    z-index: -10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .upcoming-event {
@@ -430,82 +453,86 @@ header {
   .upcoming-event img {
     margin: 4rem auto;
   }
-  .past-events .event-header{
+
+  .past-events .event-header {
     font-size: 4.8rem;
   }
+
   .swiper-container {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 0px;
-    }
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
+
   .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 300px;
-      background: #fff;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    background: #fff;
+  }
 
-    }
-    /*Style for arrow where 0085c4 is the hex code of the arrow key*/
-    .swiper-button-prev {
-      background-image: url("../res/events/left-arrow.svg");
-      outline: none !important;
-    }
+  /*Style for arrow where 0085c4 is the hex code of the arrow key*/
+  .swiper-button-prev {
+    background-image: url("../res/events/left-arrow.svg");
+    outline: none !important;
+  }
 
-    .swiper-button-next {
-      background-image: url("../res/events/right-arrow.svg");
-      outline: none !important;
-    }
-    .imgBx img{
-        max-width: 100%;
-        height: auto;
-        box-sizing: border-box;
-        border-radius: 8px;
-    }
-    .content p
-    {
-        margin: 0;
-        padding: 0px 0 0 ;
-        text-align: justify;
-        text-justify: inherit;
-        font-family: 'Quicksand', serif;
-        color: white;
-        font-size: 13px;
-    }
-    .content h3
-    {
-      padding-top: 0px;
-      color:  #36b7eb;
-      font-family: 'Roboto Slab', serif;
-      font-weight: bold;
-      font-size: 20px;
+  .swiper-button-next {
+    background-image: url("../res/events/right-arrow.svg");
+    outline: none !important;
+  }
 
-    }
-    .rm{
-      padding: 5px 5px;
-      background-color: rgba(25, 25, 26, .9);
+  .imgBx img {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
 
-    }
-    .js--fadeInRight .rm{
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 5px;
-      border-image:   linear-gradient(315deg, #89ff00, #00bcd4);
-      border-image-slice: 1;
-    }
-    .js--fadeInLeft .rm{
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 5px;
-      border-image:  linear-gradient(315deg, #e91e63, #5d02ff);
-      border-image-slice: 1;
-    }
+  .content p {
+    margin: 0;
+    padding: 0px 0 0;
+    text-align: justify;
+    text-justify: inherit;
+    font-family: 'Quicksand', serif;
+    color: white;
+    font-size: 13px;
+  }
 
+  .content h3 {
+    padding-top: 0px;
+    color: #36b7eb;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
 
-    .timeline{
-      display: none;
-    }
+  .rm {
+    padding: 5px 5px;
+    background-color: rgba(25, 25, 26, .9);
+  }
 
+  .js--fadeInRight .rm {
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 5px;
+    border-image: linear-gradient(315deg, #89ff00, #00bcd4);
+    border-image-slice: 1;
+  }
+
+  .js--fadeInLeft .rm {
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 5px;
+    border-image: linear-gradient(315deg, #e91e63, #5d02ff);
+    border-image-slice: 1;
+  }
+
+  .timeline {
+    display: none;
+  }
 }
+
 /* @media(max-width:920px)
 {
   body{

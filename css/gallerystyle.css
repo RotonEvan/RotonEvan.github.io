@@ -10,6 +10,24 @@ html {
   /* font-size: 16px; */
 }
 
+body::before {
+  background-image: url('../res/gallery/bg.jpg') !important;
+  background-position: center center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-position: none;
+  position: fixed;
+  content: "";
+  display: block;
+  z-index: -10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  /* background-color: black; */
+}
+
 body {
   font-family: 'Kanit', sans-serif;
   overflow-x: hidden;
@@ -56,7 +74,7 @@ header {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-image: url("../res/gallery/bg.jpg");
+  /* background-image: url("../res/gallery/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -68,7 +86,7 @@ header {
   -o-transition: .15s ease-in-out;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -o-transition-property: background-position;
+  -o-transition-property: background-position; */
 }
 
 .cover-img h1 {

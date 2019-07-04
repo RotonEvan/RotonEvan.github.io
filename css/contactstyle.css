@@ -29,6 +29,24 @@ header {
   z-index: 2 !important;
 }
 
+body::before {
+  background-image: url('../res/contact/1.jpg') !important;
+  background-position: center center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-position: none;
+  position: fixed;
+  content: "";
+  display: block;
+  z-index: -10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: black; */
+}
+
 body {
   /* background-image: url("../res/contact/1.jpg");
   background-repeat: no-repeat;
@@ -42,7 +60,7 @@ body {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-image: url("../res/contact/1.jpg");
+  /* background-image: url("../res/contact/1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -54,7 +72,7 @@ body {
   -o-transition: .15s ease-in-out;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -o-transition-property: background-position;
+  -o-transition-property: background-position; */
 }
 
 .cover-img h1 {
