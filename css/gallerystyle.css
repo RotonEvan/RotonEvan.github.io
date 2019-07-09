@@ -1,5 +1,6 @@
 @import "modalstyle.css";
 @import url('https://fonts.googleapis.com/css?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Leckerli+One&display=swap');
 
 a {
   text-decoration: none !important;
@@ -92,17 +93,17 @@ header {
 .cover-img h1 {
   position: relative;
   color: #fff;
-  font-family: 'Chewy', cursive;
-  font-size: 88px;
+  font-family: 'Leckerli One', cursive;
+  font-size: 78px;
   text-align: center;
   margin-top: 3rem;
 }
 
 .cover-img h1 span {
-  font-family: 'Stylish', sans-serif;
+  font-family: 'Leckerli One', cursive;
   font-size: 32px;
   color: #fff;
-  font-weight: bold;
+  font-weight: 200;
 }
 
 .cover-img p {

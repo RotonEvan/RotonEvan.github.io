@@ -27,7 +27,7 @@
   pointer-events: auto;
 } */
 .modal-window-div {
-  width: 50%;
+  width: 60%;
   height: auto;
   position: absolute;
   top: 50%;
@@ -62,7 +62,22 @@
   height: auto;
   display: flex;
   padding: 0;
-  overflow-x: auto;
+  overflow-x: scroll;
+  /* left: 50%; */
+  /* transform: translate(-50%, 0); */
+}
+
+.modal-element {
+  /*margin: 0.2em;*/
+  width: 100px;
+  margin: 20px;
+  text-align: center;
+  font-size: 1.4rem;
+  /* margin: auto; */
+  padding: 0;
+  display: block;
+  transition: all 0.3s;
+
 }
 
 .menu-modal::-webkit-scrollbar {
@@ -100,18 +115,7 @@
   color: #646567;
 }
 
-.modal-element {
-  /*margin: 0.2em;*/
-  width: 100px;
-  margin: 20px;
-  text-align: center;
-  font-size: 1.4rem;
-  /* margin: auto; */
-  padding: 0;
-  display: block;
-  transition: all 0.3s;
 
-}
 
 
 

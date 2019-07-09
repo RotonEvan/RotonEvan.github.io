@@ -25,7 +25,7 @@ header {
   top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7) !important;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0);
   z-index: 2 !important;
 }
 
@@ -53,6 +53,7 @@ body {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover; */
+  overflow-x: hidden;
 }
 .cover-img {
   display: flex;
