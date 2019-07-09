@@ -27,7 +27,28 @@
   pointer-events: auto;
 } */
 .modal-window-div {
-  width: 50%;
+  width: 65%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* align-items: center; */
+  /* margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0; */
+  overflow-y: hidden;
+  overflow-x: auto;
+  transform: translate(-50%, -50%);
+  padding-top: 40px;
+  padding-bottom: 30px;
+  /* background: rgba(6, 30, 117, 0.8); */
+  background: #242526;
+  opacity: 0.95;
+  border-radius: 30px;
+  /*display: inline-block;*/
+}
+
+.modal-window-div-2 {
+  width: 25%;
   height: auto;
   position: absolute;
   top: 50%;

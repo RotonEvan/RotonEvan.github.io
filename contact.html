@@ -38,7 +38,7 @@
       <ul>
         <li><a href="./home.html">HOME</a></li>
         <li><a href="javascript:open()">CLUBS</a></li>
-        <li><a href="./societies.html">SOCIETIES</a></li>
+        <li><a href="javascript:open_societies()">SOCIETIES</a></li>
         <li><a href="./events.html">EVENTS</a></li>
         <li><a href="./gallery.html">GALLERY</a></li>
         <li><a href="./contact.html" class="active">CONTACT US</a></li>
@@ -94,6 +94,31 @@
       </div>
     </div>
   </div>
+
+  <!--Modal Societies -->
+  <div id="modal_societies" class="modal-window">
+    <div class="container-fluid modal-window-div-2">
+      <a href="javascript:close_societies()" title="Close" class="modal-close">Close &times;</a>
+      <div class="modal-div">
+        <ul class="menu-modal">
+
+          <li class="modal-element">
+            <a href="./goals.html"><i class="flaticon-mic">
+              <div class="align-middle">GOALS</div>
+            </i></a>
+          </li> <!-- /.list-group-item -->
+
+          <li class="modal-element">
+            <a href="./das.html"><i class="flaticon-choreography">
+              <div class="align-middle">DAS</div>
+            </i></a>
+          </li> <!-- /.list-group-item -->
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
 
   <div class="cover-img" id="parallax">
     <h1>Hey !<br><span>Let's get to know each other</span></h1>
@@ -198,6 +223,7 @@
 
 
 
+  <!--Footer starts here-->
   <footer class="footer-distributed">
 
     <div class="footer-left">
@@ -207,9 +233,9 @@
       <p class="footer-links">
         <a href="./home.html">Home</a>
         ·
-        <a href="./clubs.html">Clubs</a>
+        <a href="javascript:open()">Clubs</a>
         ·
-        <a href="./societies.html">Societies</a>
+        <a href="javascript:open_societies()">Societies</a>
         ·
         <a href="./events.html">Events</a>
         ·
@@ -260,6 +286,7 @@
     </div>
 
   </footer>
+  <!--Footer ends here-->
 
   <!--Top arrow starts here-->
 
@@ -328,6 +355,25 @@
     function close() {
       console.log("modal closed");
       var mod = document.getElementById('modal');
+      mod.style.visibility = 'hidden';
+    }
+  </script>
+
+  <script type="text/javascript">
+    function open_societies() {
+      // console.log("modal opened");
+      var mod = document.getElementById('modal_societies');
+      console.log("modal_societies opened");
+      mod.style.visibility = 'visible';
+      $('.menu-toggle').toggleClass('active');
+      $('nav').toggleClass('active');
+    }
+  </script>
+
+  <script type="text/javascript">
+    function close_societies() {
+      console.log("modal_societies closed");
+      var mod = document.getElementById('modal_societies');
       mod.style.visibility = 'hidden';
     }
   </script>

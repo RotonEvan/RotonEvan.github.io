@@ -317,6 +317,24 @@
     }
   </script>
 
+  <script type="text/javascript">
+    function open_societies() {
+      // console.log("modal opened");
+      var mod = document.getElementById('modal_societies');
+      console.log("modal_societies opened");
+      mod.style.visibility = 'visible';
+      $('.menu-toggle').toggleClass('active');
+      $('nav').toggleClass('active');
+    }
+  </script>
+
+  <script type="text/javascript">
+    function close_societies() {
+      console.log("modal_societies closed");
+      var mod = document.getElementById('modal_societies');
+      mod.style.visibility = 'hidden';
+    }
+  </script>
   <!-- modal js ends -->
 
   <!--Nav Bar JS code starts here-->

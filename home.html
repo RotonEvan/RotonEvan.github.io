@@ -97,7 +97,7 @@
 
   <!--Modal Societies -->
   <div id="modal_societies" class="modal-window">
-    <div class="container-fluid modal-window-div">
+    <div class="container-fluid modal-window-div-2">
       <a href="javascript:close_societies()" title="Close" class="modal-close">Close &times;</a>
       <div class="modal-div">
         <ul class="menu-modal">
@@ -677,6 +677,8 @@
 
   </footer>
   <!--Footer ends here-->
+
+
   <!--Top arrow starts here-->
 
   <a href="#" class="to-top"><i class="fa fa-chevron-up"></i></a>
@@ -744,6 +746,14 @@
   </script>
 
   <script type="text/javascript">
+    function close() {
+      console.log("modal closed");
+      var mod = document.getElementById('modal');
+      mod.style.visibility = 'hidden';
+    }
+  </script>
+
+  <script type="text/javascript">
     function open_societies() {
       // console.log("modal opened");
       var mod = document.getElementById('modal_societies');
@@ -751,14 +761,6 @@
       mod.style.visibility = 'visible';
       $('.menu-toggle').toggleClass('active');
       $('nav').toggleClass('active');
-    }
-  </script>
-
-  <script type="text/javascript">
-    function close() {
-      console.log("modal closed");
-      var mod = document.getElementById('modal');
-      mod.style.visibility = 'hidden';
     }
   </script>
 
