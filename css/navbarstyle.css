@@ -5,7 +5,7 @@ header {
   padding: 0px;
   color: #fff;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 0px;
 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
 }
@@ -75,7 +75,7 @@ nav ul li a:hover {
   top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.85);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0);
 }
 
 .hide {
