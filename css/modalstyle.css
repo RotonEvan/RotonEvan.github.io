@@ -1,6 +1,11 @@
 @import "../res/clubs/font/flaticon2.css";
+@import "../res/society/font/flaticon.css";
 @media (max-width: 920px) {
   .modal-window-div {
+    width: 72.5% !important;
+  }
+
+  .modal-window-div-2 {
     width: 72.5% !important;
   }
 }
@@ -186,6 +191,14 @@
 
 .modal-element:hover [class^="flaticon-paint"]:before, [class*=" flaticon-paint"]:before, [class^="flaticon-paint"]:after, [class*=" flaticon-paint"]:after {
   color: #ff4765;
+}
+
+.modal-element:hover [class^="flaticon-book"]:before, [class*=" flaticon-book"]:before, [class^="flaticon-book"]:after, [class*=" flaticon-book"]:after {
+  color: #e0263c;
+}
+
+.modal-element:hover [class^="flaticon-design"]:before, [class*=" flaticon-design"]:before, [class^="flaticon-design"]:after, [class*=" flaticon-design"]:after {
+  color: #69f8ff;
 }
 
 .align-middle {

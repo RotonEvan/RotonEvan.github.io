@@ -127,13 +127,13 @@
         <ul class="menu-modal-2">
 
           <li class="modal-element">
-            <a href="./goals.html"><i class="flaticon-mic">
+            <a href="./goals.html"><i class="flaticon-book">
               <div class="align-middle">GOALS</div>
             </i></a>
           </li> <!-- /.list-group-item -->
 
           <li class="modal-element">
-            <a href="./das.html"><i class="flaticon-choreography">
+            <a href="./das.html"><i class="flaticon-design">
               <div class="align-middle">DAS</div>
             </i></a>
           </li> <!-- /.list-group-item -->
@@ -480,7 +480,7 @@
     var navbar = document.getElementById("navbar");
 
     // Get the offset position of the navbar
-    var sticky = navbar.offsetTop + 250;
+    var sticky = navbar.offsetTop + 1;
 
     // Add the sticky class to the navbar when you reach its scroll position.
     //Remove "sticky" when you leave the scroll position
@@ -493,6 +493,16 @@
     }
   </script>
   <!--Nav Bar JS code ends here-->
+
+  <script type="text/javascript">
+    $(window).scroll(function() {
+      if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+        navbar.classList.add("hide");
+      } else {
+        navbar.classList.remove("hide");
+      }
+    });
+  </script>
 
 </body>
 

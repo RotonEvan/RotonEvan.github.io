@@ -44,6 +44,10 @@
   margin: auto 3rem;
 }
 
+.council-img img:hover {
+  transform: scale(1.05);
+}
+
 
 .council-img img {
   position: relative;
@@ -60,6 +64,7 @@
   margin-right: 1rem; */
   overflow: hidden;
   /* width: 100%; */
+  transition: all 0.3s;
 }
 
 .council-img h3 {

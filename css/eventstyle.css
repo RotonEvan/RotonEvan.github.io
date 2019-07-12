@@ -241,6 +241,14 @@ header {
   /* padding: 3px; */
 }
 
+.box-content {
+  transition: all 0.3s;
+}
+
+.box-content:hover {
+  transform: scale(1.03);
+}
+
 /* The circles on the timeline */
 .box::after {
   content: '';
@@ -342,7 +350,8 @@ header {
     opacity: 0.8;
   } */
 .box-content:hover {
-  box-shadow: 0 15px 30px rgba(255, 204, 255, .5);
+  /* box-shadow: 0 15px 30px rgba(255, 204, 255, .5); */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, .5);
 }
 
 .box .content h3 {

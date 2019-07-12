@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 29/05/2019 20:12
+    Creation date: 11/07/2019 21:29
     */
 
     @font-face {
@@ -37,16 +37,20 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-mic:before { content: "\f100"; }
-.flaticon-choreography:before { content: "\f101"; }
-.flaticon-drama:before { content: "\f102"; }
-.flaticon-question:before { content: "\f103"; }
-.flaticon-photograph:before { content: "\f104"; }
-.flaticon-paint:before { content: "\f105"; }
+    .flaticon-book:before { content: "\f100"; }
+.flaticon-design:before { content: "\f101"; }
+.flaticon-mic:before { content: "\f102"; }
+.flaticon-choreography:before { content: "\f103"; }
+.flaticon-theater:before { content: "\f104"; }
+.flaticon-photograph:before { content: "\f105"; }
+.flaticon-paint:before { content: "\f106"; }
+.flaticon-question:before { content: "\f107"; }
     
-    $font-Flaticon-mic: "\f100";
-    $font-Flaticon-choreography: "\f101";
-    $font-Flaticon-drama: "\f102";
-    $font-Flaticon-question: "\f103";
-    $font-Flaticon-photograph: "\f104";
-    $font-Flaticon-paint: "\f105";
+    $font-Flaticon-book: "\f100";
+    $font-Flaticon-design: "\f101";
+    $font-Flaticon-mic: "\f102";
+    $font-Flaticon-choreography: "\f103";
+    $font-Flaticon-theater: "\f104";
+    $font-Flaticon-photograph: "\f105";
+    $font-Flaticon-paint: "\f106";
+    $font-Flaticon-question: "\f107";

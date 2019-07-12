@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 29/05/2019 20:12
+  	Creation date: 11/07/2019 21:29
   	*/
 
 @font-face {
@@ -23,16 +23,18 @@
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
         font-size: 20px;
 font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-mic:before { content: "\f100"; }
-.flaticon-choreography:before { content: "\f101"; }
-.flaticon-drama:before { content: "\f102"; }
-.flaticon-question:before { content: "\f103"; }
-.flaticon-photograph:before { content: "\f104"; }
-.flaticon-paint:before { content: "\f105"; }
+.flaticon-book:before { content: "\f100"; }
+.flaticon-design:before { content: "\f101"; }
+.flaticon-mic:before { content: "\f102"; }
+.flaticon-choreography:before { content: "\f103"; }
+.flaticon-drama:before { content: "\f104"; }
+.flaticon-photograph:before { content: "\f105"; }
+.flaticon-paint:before { content: "\f106"; }
+.flaticon-question:before { content: "\f107"; }
