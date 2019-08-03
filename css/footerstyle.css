@@ -92,7 +92,7 @@ font-family: fontawesome !important;
 	display: inline-block;
 	color: #ffffff;
 	vertical-align: middle;
-	margin:0.8rem auto;
+	margin: 0.8rem auto;
 }
 
 .footer-distributed .footer-center p span{
@@ -164,7 +164,7 @@ font-family: fontawesome !important;
 	.footer-distributed .footer-right{
 		display: block;
 		width: 100%;
-		margin-bottom: 40px;
+		margin-bottom: 0px;
 		text-align: center;
 		overflow: hidden;
 	}

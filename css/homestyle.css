@@ -4,6 +4,7 @@
 @import "footerstyle.css";
 @import "modalstyle.css";
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 
 a {
   text-decoration: none !important;
@@ -16,7 +17,7 @@ html {
 }
 
 body::before {
-  background-image: url('../res/home-bg-4.jpg') !important;
+  background-image: url('../res/bg5.jpg') !important;
   background-position: center center !important;
   background-repeat: no-repeat;
   background-size: cover;
@@ -81,20 +82,21 @@ header {
 }
 
 .welcome-to-cult .welcome {
-  font-family: 'Arvo', serif;
+  /* font-family: 'Arvo', serif; */
+  font-family: 'Acme', sans-serif;
   font-weight: bold;
-  font-size: 8rem;
+  font-size: 8.6rem;
 }
 
 .welcome-to-cult .iitbhilai {
   font-family: 'Stylish', sans-serif;
-  font-size: 4rem;
+  font-size: 4.5rem;
   color: #f4eb66;
 }
 
 .welcome-to-cult .desc-cult {
   font-family: 'Stylish', sans-serif;
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   color: white;
   text-align: center;
   position: relative;
@@ -112,7 +114,8 @@ header {
 }
 
 .meet-clubs .clubs-header {
-  font-family: 'Arvo', serif;
+  /* font-family: 'Arvo', serif; */
+  font-family: 'Acme', sans-serif;
   font-weight: bold;
   font-size: 7rem;
 }
@@ -134,7 +137,8 @@ header {
 
 .upcoming-event .event-header {
   position: relative;
-  font-family: 'Arvo', serif;
+  /* font-family: 'Arvo', serif; */
+  font-family: 'Acme', sans-serif;
   font-weight: bold;
   font-size: 7rem;
 }
@@ -232,8 +236,9 @@ header {
   }
 
   .welcome-to-cult .desc-cult {
-    font-size: 2rem;
-    max-width: 50ch;
+    font-size: 1.8rem;
+    max-width: 38ch;
+    margin: 2rem auto !important;
   }
 
   .meet-clubs {
